@@ -1,5 +1,5 @@
 {
-  "spider": "./jar/spider.jar;md5;466fd45c357313a23e0e05d201b38d6c",
+  "spider": "./jar/fan.txt;md5;dab654f794a271c3d7a33d18acfbfa95",
   "wallpaper": "https://wallpaper-1tg.pages.dev/",
   "sites": [
     {"key": "drpy_js_豆瓣","name": "搜索 • 豆瓣","type": 3,"searchable": 1,"quickSearch": 0,"changeable": 0,"api": "./lib/drpy2.min.js","ext": "./js/drpy.js"},
