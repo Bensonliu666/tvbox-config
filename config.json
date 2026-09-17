@@ -346,11 +346,9 @@
     {"key": "咕咕","name": "🦉咕咕┃动漫","type": 3,"searchable": 1,"quickSearch": 1,"changeable": 1,"timeout": 10,"api": "csp_AppSxGuard","ext": "rfOX1voDIQhH8epBwpmIsuS/sSCZxc/l0mxkeoroQVYOelMAvX1kuYptSLB36YxEjVawS9p37Cgo"},
     {"key": "吃瓜","name": "🏐吃瓜┃看球","type": 3,"searchable": 0,"quickSearch": 0,"changeable": 0,"style": {"type":"list"},"api": "csp_LiveGzGuard"},
     {"key": "有声小说","name": "🎧有声┃小说","type": 3,"searchable": 0,"quickSearch": 0,"changeable": 0,"style": {"type":"rect","ratio":1},"api": "csp_Tingshu275Guard"},
-    {"key": "虎牙js","name": "🐯虎牙┃直播","type": 3,"searchable": 1,"quickSearch": 0,"changeable": 0,"playerType": "2","timeout": 10,"style": {"type":"rect","ratio":1.755},"api": "./FTY/drpy2.min.js","ext": "./FTY/虎牙.js"},
     {"key": "ZPan","name": "🎈盘搜┃四盘","type": 3,"searchable": 1,"quickSearch": 0,"changeable": 0,"indexs": 0,"style": {"type":"list"},"api": "csp_S_zpsGuard","ext": {"siteUrl":"http://107.173.211.148/"}},
     {"key": "JPan","name": "🦋易搜┃四盘","type": 3,"searchable": 1,"quickSearch": 0,"changeable": 0,"indexs": 0,"style": {"type":"list"},"api": "csp_S_zpsGuard","ext": {"siteUrl":"https://so.252035.xyz/"}},
-    {"key": "BpanSo","name": "🐞盘他┃嘟嘟","type": 3,"searchable": 1,"quickSearch": 1,"changeable": 0,"api": "csp_BpanSoGuard","ext": {"Cloud-drive":"tvfan/Cloud-drive.txt"}},
-    {"key": "dr_兔小贝","name": "📚儿童┃启蒙","type": 3,"searchable": 0,"quickSearch": 0,"changeable": 0,"style": {"type":"rect","ratio":1.597},"api": "./FTY/drpy2.min.js","ext": "./FTY/%E5%85%94%E5%B0%8F%E8%B4%9D.js"}
+    {"key": "BpanSo","name": "🐞盘他┃嘟嘟","type": 3,"searchable": 1,"quickSearch": 1,"changeable": 0,"api": "csp_BpanSoGuard","ext": {"Cloud-drive":"tvfan/Cloud-drive.txt"}}
   ],
   "lives": [
     {"name": "migu","type": 0,"playerType": 1,"timeout": 20,"url": "https://develop202.github.io/migu_video/interface.txt","ua": "okhttp/3.8.1","epg": "https://epg.cdn.loc.cc/?ch={name}&date={date}","logo": "https://logo.wyfc.qzz.io/{name}.png"},
