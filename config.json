@@ -314,16 +314,7 @@
     {"key":"4KHDR","name":"4KHDR","type":3,"quickSearch":1,"changeable":1,"timeout":60,"api":"csp_FourKHDR","ext":"./lib/token.json$$$http://127.0.0.1:9978/file/TV/4khdr.txt"}
   ],
   "lives": [
-    {"name":"四川联通","type":0,"url":"./live/unicom.txt"},
-    {"name":"migu","type":0,"playerType":1,"timeout":20,"url":"https://develop202.github.io/migu_video/interface.txt","ua":"okhttp/3.8.1","epg":"https://epg.cdn.loc.cc/?ch={name}&date={date}","logo":"https://logo.wyfc.qzz.io/{name}.png"},
-    {"name":"live","type":0,"playerType":1,"timeout":20,"url":"https://epg.pw/test_channels.m3u","ua":"okhttp/3.8.1","epg":"https://epg.cdn.loc.cc/?ch={name}&date={date}","logo":"https://logo.wyfc.qzz.io/{name}.png"},
-    {"name":"ipv6","type":0,"playerType":1,"timeout":20,"url":"./tvboxtv.txt","ua":"okhttp/3.8.1","epg":"https://epg.cdn.loc.cc/?ch={name}&date={date}","logo":"https://logo.wyfc.qzz.io/{name}.png"},
-    {"name":"初秋语•ipv4","type":0,"playerType":2,"url":"./list.txt","epg":"http://epg.cdn.loc.cc/?ch={name}&date={date}","logo":"https://live.fanmingming.com/tv/{name}.png"},
-    {"name":"Yoursmile•综合","type":0,"playerType":1,"url":"https://agit.ai/Yoursmile7/TVBox/raw/branch/master/live.txt","epg":"http://epg.cdn.loc.cc/?ch={name}&date={date}","logo":"https://logo.wyfc.qzz.io/{name}.png"},
-    {"name":"初秋语•电台","type":0,"playerType":1,"url":"./radio.txt"},
-    {"name":"初秋语•综合","type":0,"playerType":2,"url":"./list.txt","epg":"http://epg.cdn.loc.cc/?ch={name}&date={date}","logo":"https://logo.wyfc.qzz.io/{name}.png"},
-    {"name":"PG•油管","type":0,"url":"./yo21.txt","epg":"http://epg.cdn.loc.cc/?ch={name}&date={date}","logo":"https://logo.wyfc.qzz.io/{name}.png"},
-    {"name":"北京移动","type":0,"url":"./live/mobile.txt"}
+    {"name":"综合直播","type":0,"url":"./all.txt"}
   ],
   "parses": [
     {"name":"Json聚合","type":3,"url":"Demo"},
