@@ -1,0 +1,99 @@
+{
+// ==================== 阿里云盘 ====================
+"token": "",                          // 【必填】阿里云盘 refresh_token，TVBox内扫码登录后自动生成，或从其他配置复制
+"open_token": "",                     // 阿里云盘开放平台token（一般不用填）
+"open_api_url": "postparam|http://api.extscreen.com/aliyundrive/token",  // 开放平台API地址（默认即可）
+"oauth_client_id": "",                // OAuth客户端ID（一般不用填）
+"oauth_client_secret": "",            // OAuth客户端密钥（一般不用填）
+"oauth_auth_url": "",                 // OAuth授权地址（一般不用填）
+"oauth_refresh_url": "",              // OAuth刷新地址（一般不用填）
+"is_vip": false,                      // 【重要】阿里云盘是否VIP：true=VIP(可32线程)，false=非VIP(限2线程)
+"vip_thread_limit": 2,                // 阿里云盘下载线程数：VIP建议32，非VIP建议2（太高会被封）
+"vip_thread_limit_night": "19-23=10", // 夜间限速：格式"开始-结束=线程数"，晚7-11点限10线程
+"vod_flags": "4kz|auto",              // 画质优先级：4kz=4K，auto=自动，用|分隔，从左到右优先
+
+// ==================== 夸克网盘 ====================
+"quark_thread_limit": 2,              // 夸克非VIP线程数：建议2
+"quark_thread_limit_night": "19-23=10", // 夸克夜间限速
+"quark_is_guest": true,               // 【重要】夸克是否游客模式：true=免登录直接用(推荐)，false=用cookie登录
+"quark_vip_thread_limit": 32,         // 夸克VIP线程数
+"quark_vip_thread_limit_night": "19-23=10", // 夸克VIP夜间限速
+"quark_flags": "4kz|auto",            // 夸克画质优先级
+"quark_cookie": "",                    // 【选填】夸克cookie：quark_is_guest=false时需要填，浏览器登录quark.cn后F12复制cookie
+
+// ==================== UC网盘 ====================
+"uc_thread_limit": 2,                  // UC非VIP线程数
+"uc_is_vip": false,                    // UC是否VIP
+"uc_vip_thread_limit": 32,             // UC VIP线程数
+"uc_flags": "4kz|auto",                // UC画质优先级
+"uc_cookie": "",                       // 【选填】UC网盘cookie：浏览器登录drive.uc.cn后复制cookie
+
+// ==================== 迅雷网盘 ====================
+"thunder_thread_limit": 2,             // 迅雷非VIP线程数
+"thunder_is_vip": false,               // 迅雷是否VIP
+"thunder_vip_thread_limit": 32,        // 迅雷VIP线程数
+"thunder_flags": "4kz",                // 迅雷画质优先级
+"thunder_username": "",                // 【选填】迅雷账号：手机号/邮箱
+"thunder_password": "",                // 【选填】迅雷密码
+"thunder_captchatoken": "",            // 迅雷验证码token（一般不用填）
+
+// ==================== 移动云盘(和彩云) ====================
+"yd_auth": "",                         // 【选填】移动云盘auth token：登录caiyun.feixin.10086.cn后获取
+"yd_thread_limit": 4,                  // 移动云盘线程数
+"yd_flags": "auto|4kz",                // 移动云盘画质优先级
+"yd_danmu": true,                      // 移动云盘是否开启弹幕
+
+// ==================== PikPak网盘 ====================
+"pikpak_username": "",                 // 【选填】PikPak账号：邮箱
+"pikpak_password": "",                 // 【选填】PikPak密码
+"pikpak_flags": "4kz",                 // PikPak画质优先级
+"pikpak_thread_limit": 2,              // PikPak非VIP线程数
+"pikpak_vip_thread_limit": 32,         // PikPak VIP线程数
+"pikpak_proxy": "",                    // PikPak代理：需要科学上网，格式 socks5://127.0.0.1:10172 或 http://ip:port
+"pikpak_proxy_onlyapi": false,         // PikPak是否仅API走代理
+"pikpak_danmu": true,                  // PikPak是否开启弹幕
+
+// ==================== 115网盘 ====================
+"pan115_cookie": "",                   // 【选填】115网盘cookie：浏览器登录115.com后F12复制cookie
+"pan115_thread_limit": 2,              // 115非VIP线程数
+"pan115_vip_thread_limit": 32,         // 115 VIP线程数
+"pan115_is_vip": false,                // 115是否VIP
+"pan115_flags": "4kz",                 // 115画质优先级
+"pan115_speed_limit": 0,               // 115限速：0=不限，单位字节/秒
+"pan115_speed_limit_mobile": 10485760, // 115移动端限速：默认10MB/s
+"pan115_auto_delete": true,            // 115是否自动删除转存文件（省空间）
+"pan115_delete_code": "",              // 115删除验证码（一般不用填）
+
+// ==================== 代理设置 ====================
+"aliproxy": "",                        // 阿里云盘专用代理（一般不用）
+"aliproxy_url": "",                    // 阿里云盘代理地址（一般不用）
+"proxy": "",                            // 【全局代理】阿里云盘等用，格式 socks5://127.0.0.1:10172 或 http://ip:port，不需要就留空
+"youtube_proxy": "",                    // YouTube专用代理
+
+// ==================== 弹幕 ====================
+"danmu": true,                          // 阿里云盘是否开启弹幕
+"quark_danmu": true,                    // 夸克是否开启弹幕
+
+// ==================== 网盘排序 ====================
+"pan_order": "ali|quark|uc|115|yd|thunder|pikpak",  // 网盘搜索结果显示顺序，用|分隔
+
+// ==================== 高级/一般不用改 ====================
+"wgcf_key": "",                        // WARP密钥（一般不用）
+"wgcf_key2": "",                       // WARP密钥2（一般不用）
+"wgcf_ipport": "",                     // WARP IP端口（一般不用）
+"wgcf_xray_url": "./xray.gz",          // xray文件地址（默认即可）
+"wgcf_geoip_url": "./geoip.dat.gz",    // geoip文件地址（默认即可）
+"wgcf_json_url": "./wgcf.json",        // wgcf配置地址（默认即可）
+"wgcf_vless_id": "",                   // vless UUID（一般不用）
+"wgcf_vless_optname": "singapore.com:443", // vless服务器地址（默认即可）
+"wgcf_vless_worker": "",               // vless worker（一般不用）
+"wgcf_vless_path": "/?ed=2048",        // vless路径（默认即可）
+"wgcf_vless_protocol": "vless",        // vless协议（默认即可）
+"wgcf_vless_network": "ws",            // vless网络类型（默认即可）
+"wgcf_vless_tls": false,               // vless是否TLS（默认即可）
+"libxl_url": "./libxl_thunder_sdk.so", // 迅雷SDK地址（默认即可）
+"singbox_url": "./sing-box.gz",        // sing-box文件地址（默认即可）
+"singbox_subscribe_url": "",            // sing-box订阅地址（一般不用）
+"singbox_clash2singbox_url": "./clash2singbox.gz", // clash转singbox工具（默认即可）
+"singbox_template_url": "./singbox.json"  // sing-box模板（默认即可）
+}
