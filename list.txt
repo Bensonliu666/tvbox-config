@@ -1,4 +1,0 @@
-CCTV,#genre#
-卫视,#genre#
-山西卫视,http://liveflash.sxrtv.com/live/sxwshd.m3u8?sub_m3u8=true&edge_slice=true
-精品,#genre#
