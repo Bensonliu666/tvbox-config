@@ -238,8 +238,6 @@
     {"key":"應用商店","name":"應用商店","type":3,"searchable":0,"changeable":0,"api":"csp_Market","ext":"./json/market.json"},
     {"key":"drpy_js_好趣网","name":"电视┃好趣网[js]","type":3,"changeable":0,"style":{"type":"oval","ratio":1.1},"api":"./lib/drpy2.min.js","ext":"./js/好趣网.js"},
     {"key":"lf_js_lf_live","name":"直播","type":3,"searchable":1,"quickSearch":1,"filterable":1,"changeable":0,"style":{"type":"oval"},"api":"./lib/lf_live_min.js","ext":"./js/lf_live.txt"},
-    {"key":"XBPQ_独播库","name":"独播库","type":3,"searchable":1,"quickSearch":1,"filterable":1,"changeable":1,"timeout":60,"jar":"./jar/XBPQ_upgraded.jar;md5;c10ebfca316c4ac51cb00547bfdd2389","api":"csp_XBPQ","ext":"./XBPQ/独播库.json"},
-    {"key":"XBPQ_黑夜影院","name":"黑夜影院","type":3,"searchable":1,"quickSearch":1,"filterable":1,"changeable":1,"timeout":60,"jar":"./jar/XBPQ_upgraded.jar;md5;c10ebfca316c4ac51cb00547bfdd2389","api":"csp_XBPQ","ext":"./XBPQ/黑夜影院.json"},
     {"key":"XBPQ_樱之空","name":"樱之空","type":3,"searchable":1,"quickSearch":1,"filterable":1,"changeable":1,"timeout":60,"jar":"./jar/XBPQ_upgraded.jar;md5;c10ebfca316c4ac51cb00547bfdd2389","api":"csp_XBPQ","ext":"./XBPQ/樱之空.json"},
     {"key":"XBPQ_饭搭子影视","name":"饭搭子影视","type":3,"searchable":1,"quickSearch":1,"filterable":1,"changeable":1,"timeout":60,"jar":"./jar/XBPQ_upgraded.jar;md5;c10ebfca316c4ac51cb00547bfdd2389","api":"csp_XBPQ","ext":"./XBPQ/饭搭子影视.json"},
     {"key":"XBPQ_奈飞工厂","name":"奈飞工厂","type":3,"searchable":1,"quickSearch":1,"filterable":1,"changeable":1,"timeout":60,"jar":"./jar/XBPQ_upgraded.jar;md5;c10ebfca316c4ac51cb00547bfdd2389","api":"csp_XBPQ","ext":"./XBPQ/奈飞工厂.json"}
