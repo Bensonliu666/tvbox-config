@@ -63,7 +63,7 @@ if(LISTS.length==0){
 log('qiuxia LISTS:'+LISTS.length+' lines');
 `
     },
-    一级: '.video-pic;&title;&data-original;.score&&Text;&href',
+    一级: 'ul.item li;.title h5&&Text;.video-pic&&data-original;.score&&Text;.video-pic&&href',
     搜索: {
         title: '.video-pic&&title',
         img: '.video-pic&&data-original',
