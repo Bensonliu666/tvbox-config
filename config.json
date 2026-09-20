@@ -62,7 +62,6 @@
     {"key":"光速","name":"影视 • 光速[直连]","type":1,"searchable":1,"quickSearch":1,"filterable":1,"api":"https://api.guangsuapi.com/api.php/provide/vod/"},
     {"key":"金鹰","name":"影视 • 金鹰[直连]","type":1,"searchable":1,"quickSearch":1,"filterable":1,"api":"https://jinyingzy.com/api.php/provide/vod/"},
     {"key":"csp_Bili","name":"哔哩","type":3,"searchable":1,"quickSearch":1,"filterable":1,"changeable":0,"style":{"type":"rect","ratio":1.755},"api":"csp_Bili","ext":{"json":"./json/bili.json","cookie":""}},
-    {"key":"Ikanbot","name":"爱看","type":3,"searchable":1,"quickSearch":1,"filterable":1,"changeable":1,"api":"csp_Ikanbot","ext":"https://v.ikanbot.com$$$proxy"},
     {"key":"csp_Xunlei8","name":"迅雷吧","type":3,"searchable":1,"quickSearch":1,"filterable":1,"playerType":1,"timeout":60,"api":"csp_Xunlei8"},
     {"key":"BT天堂","name":"BT天堂","type":3,"searchable":1,"quickSearch":1,"filterable":1,"timeout":60,"jar":"./jar/XBPQ_upgraded.jar;md5;c10ebfca316c4ac51cb00547bfdd2389","api":"csp_XBPQ","ext":"./XBPQ/bttt.json"},
     {"key":"布谷tv","name":"布谷4K","type":3,"searchable":1,"quickSearch":1,"filterable":1,"timeout":60,"jar":"./jar/XBPQ_upgraded.jar;md5;c10ebfca316c4ac51cb00547bfdd2389","api":"csp_XBPQ","ext":"./XBPQ/布谷4K.json"},
