@@ -27,7 +27,7 @@ var rule = {
     lazy: '',
     limit: 6,
     推荐: '',
-    一级: 'li:has(img);img&&alt;img&&data-original;;a&&href',
+    一级: 'li.pure-g;img&&alt;img&&data-original;a&&href',
     二级: {
         title: "h1&&Text",
         img: "img&&src",
