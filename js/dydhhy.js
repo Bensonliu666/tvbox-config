@@ -1,6 +1,6 @@
 var rule = {
     title: 'dydhhy',
-    host: 'http://www.dydhhy.com',
+    host: 'https://www.dydhhy.com',
     homeUrl: '/',
     url: '/tag/fyclass/page/fypage?',
     filter_url: '{{fl.class}}',
@@ -26,8 +26,8 @@ var rule = {
     }],
     lazy: '',
     limit: 6,
-    推荐: 'div.clear:gt(1):has(img);.entry-title&&Text;img&&src;;a&&href',
-    一级: 'div.clear:gt(1):has(img);.entry-title&&Text;img&&src;;a&&href',
+    推荐: 'div.post:has(img);.entry-title&&Text;img&&src;;a&&href',
+    一级: 'div.post;.entry-title&&Text;img&&src;;a&&href',
     二级: {
         title: ".single-excerpt&&Text",
         img: "img&&src",
