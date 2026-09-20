@@ -80,7 +80,6 @@
     {"key":"drpy_js_评书随身听","name":"评书┃评书随身听[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/评书随身听.js"},
     {"key":"drpy_js_相声随身听","name":"相声┃相声随身听[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/相声随身听.js"},
     {"key":"drpy_js_好趣网","name":"电视┃好趣网[js]","type":3,"changeable":0,"style":{"type":"oval","ratio":1.1},"api":"./lib/drpy2.min.js","ext":"./js/好趣网.js"},
-    {"key":"drpy_js_ddys","name":"低端[js]","type":3,"quickSearch":1,"changeable":1,"timeout":30,"api":"./lib/drpy2.min.js","ext":"./js/ddys.js"},
     {"key":"drpy_js_dydhhy","name":"dydhhy[js]","type":3,"quickSearch":1,"changeable":1,"timeout":30,"api":"./lib/drpy2.min.js","ext":"./js/dydhhy.js"},
     {"key":"drpy_js_rrdyw","name":"rrdyw[js]","type":3,"quickSearch":1,"changeable":1,"timeout":30,"api":"./lib/drpy2.min.js","ext":"./js/rrdyw.js"},
     {"key":"马猴影视","name":"马猴 • APP","type":3,"api":"csp_App3Q","ext":{"host":"https://45.150.167.18:8000","finger":"SF-A962FEC75DA28D7514F2A16580334272A78AC0A8429F10C94F47C1BAFC876E3F","updateId":"43c1ef69-3748-aaeb-317f-c621c77653ee","deviceBrand":"vivo","deviceModel":"V2309A","pkg":"com.damahou.tv","sk":"SK-woniu-thanks","ver":"1"}},
