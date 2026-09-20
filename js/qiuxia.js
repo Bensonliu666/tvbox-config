@@ -2,11 +2,13 @@
 var rule = {
     title: '秋霞',
     host: 'https://qiuxia001.com',
-    url: '/qiu/fyclass/',
+    url: '/qiu/fyclass/fypage/',
     searchUrl: '/search/-------------/?wd=fykey',
     headers: {
         'User-Agent': 'MOBILE_UA'
     },
+    class_name: '电影&连续剧&综艺&动漫&短剧&理论片',
+    class_url: '1&2&3&4&27&20',
     class_parse: '.nav li a;Text;href;/qiu/(\\d+)/',
     二级: {
         title: 'h2.text-overflow&&Text',
