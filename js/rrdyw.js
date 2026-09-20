@@ -2,7 +2,7 @@ var rule = {
     title: 'RRDY網',
     host: 'https://www.rrdynb.com',
     homeUrl: '/',
-    url: '/fyclass_fypage.html?',
+    url: '/fyclass_(fypage+1).html?',
     filter_url: '{{fl.class}}',
     filter: {},
     searchUrl: '/plus/search.php?q=**&pagesize=10&submit=',
