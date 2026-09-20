@@ -26,8 +26,8 @@ var rule = {
     }],
     lazy: '',
     limit: 6,
-    推荐: 'div.type-post;.entry-title a&&Text;img&&src;;a.thumbnail-link&&href',
-    一级: 'div.type-post;.entry-title a&&Text;img&&src;;a.thumbnail-link&&href',
+    推荐: 'div.post;.entry-title&&Text;img&&src;;a&&href',
+    一级: 'div.post;.entry-title&&Text;img&&src;;a&&href',
     二级: {
         title: ".single-excerpt&&Text",
         img: "img&&src",
