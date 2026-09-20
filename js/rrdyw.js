@@ -27,7 +27,7 @@ var rule = {
     lazy: '',
     limit: 6,
     推荐: '',
-    一级: 'li.shadow;h2 a&&title;img&&data-original;;a.movie-thumbnails&&href',
+    一级: 'li;img&&alt;img&&data-original;;a&&href',
     二级: {
         title: "h1&&Text",
         img: "img&&src",
