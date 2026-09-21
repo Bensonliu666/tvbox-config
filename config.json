@@ -891,6 +891,6 @@
     {"key":"csp_Bili_Nvtuan","name":"🅱️┃女团┃热舞","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/hccx/女团.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
     {"key":"csp_Bili_MTV","name":"🅱️┃歌曲┃演唱","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/hccx/歌曲.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
     {"key":"csp_Bili_Yinl2","name":"🅱️┃音悦┃合集","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/hccx/音悦.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
-    {"key":"js_B站精简_liucn","name":"🅱️┃哔哩┃精简[liucn]","type":3,"api":"./lib/drpy2_liucn.min.js","searchable":0,"quickSearch":0,"filterable":1,"ext":"./js/B站精简_liucn.js"}
+    {"key":"js_B站精简_liucn","name":"🅱️┃哔哩┃精简[liucn]","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"ext":{"json":"./json/B站精简_liucn.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"changeable":0,"style":{"type":"rect","ratio":1.618}}
   ]
 }
