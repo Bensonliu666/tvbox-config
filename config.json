@@ -515,8 +515,6 @@
     {"key":"drpy_js_好趣网","name":"电视┃好趣网[js]","type":3,"changeable":0,"style":{"type":"oval","ratio":1.1},"api":"./lib/drpy2.min.js","ext":"./js/好趣网.js"},
     {"key":"lf_js_lf_live","name":"直播","type":3,"searchable":1,"quickSearch":1,"filterable":1,"changeable":0,"style":{"type":"oval"},"api":"./lib/lf_live_min.js","ext":"./js/lf_live.txt"},
     {"key":"XBPQ_樱之空","name":"樱之空","type":3,"searchable":1,"quickSearch":1,"filterable":1,"changeable":1,"timeout":60,"jar":"./jar/XBPQ_upgraded.jar;md5;c10ebfca316c4ac51cb00547bfdd2389","api":"csp_XBPQ","ext":"./XBPQ/樱之空.json"},
-    {"key":"dr_童趣_liucn","name":"🧗‍┃童趣┃播视[liucn]","type":3,"api":"./lib/drpy2_liucn.min.js","searchable":1,"quickSearch":1,"filterable":1,"ext":"./js/童趣_liucn.js"},
-    {"key":"dr_兔小贝_liucn","name":"📚儿童┃启蒙[liucn]","type":3,"api":"./lib/drpy2_liucn.min.js","ext":"./js/兔小贝_liucn.js","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0},
     {"key":"少儿教育_liucn","name":"📚少儿┃教育[liucn]","type":3,"api":"csp_Bili","style":{"type":"rect","ratio":1.618},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"./json/少儿教育_liucn.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
     {"key":"小学课堂_liucn","name":"📚小学┃课堂[liucn]","type":3,"api":"csp_Bili","style":{"type":"rect","ratio":1.618},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"./json/小学课堂_liucn.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
     {"key":"初中课堂_liucn","name":"📚初中┃课堂[liucn]","type":3,"api":"csp_Bili","style":{"type":"rect","ratio":1.618},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"./json/初中课堂_liucn.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
