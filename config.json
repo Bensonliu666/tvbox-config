@@ -1,8 +1,7 @@
 {
+  "spider": "./jar/spider.jar",
   "wallpaper": "https://wallpaper-1tg.pages.dev/",
-  "lives": [
-    {"name":"综合直播","type":0,"url":"./all.txt"}
-  ],
+  "lives": [{"name":"综合直播","type":0,"url":"./all.txt"}],
   "parses": [
     {"name":"Json聚合","type":3,"url":"Demo"},
     {"name":"羽路均沾","type":0,"url":"https://ylu.cc/index.php?url="},
