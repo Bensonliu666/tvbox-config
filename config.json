@@ -1,5 +1,4 @@
 {
-  "spider": "./jar/spider.jar;md5;466fd45c357313a23e0e05d201b38d6c",
   "wallpaper": "https://wallpaper-1tg.pages.dev/",
   "lives": [
     {"name":"综合直播","type":0,"url":"./all.txt"}
