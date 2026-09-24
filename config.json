@@ -22,8 +22,8 @@
   "hosts": ["cache.ott.ystenlive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com","cache.ott.bestlive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com","cache.ott.wasulive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com","cache.ott.fifalive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com","cache.ott.hnbblive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com"],
   "sites": [
 
-  	{"key":"路漫漫","name":"路漫漫 • 动漫","type":3,"api":"https://pan.29o.cn/down.php/136fd915b6164bb2dcec424a091bb699.js","ext":"./js/LMM.js"},
-    {"key":"去看吧","name":"去看吧 • 动漫","type":3,"api":"https://pan.29o.cn/down.php/136fd915b6164bb2dcec424a091bb699.js","ext":"./js/QKB.js"},
+  	{"key":"路漫漫1","name":"路漫漫 1• 动漫","type":3,"api":"https://pan.29o.cn/down.php/136fd915b6164bb2dcec424a091bb699.js","ext":"./js/LMM.js"},
+    {"key":"去看吧1","name":"去看吧1 • 动漫","type":3,"api":"https://pan.29o.cn/down.php/136fd915b6164bb2dcec424a091bb699.js","ext":"./js/QKB.js"},
 
     {"key":"drpy_js_豆瓣","name":"搜索 • 豆瓣","type":3,"searchable":1,"quickSearch":0,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/drpy.js"},
     {"key":"csp_YGP","name":"预告片","type":3,"searchable":1,"quickSearch":1,"changeable":0,"api":"csp_YGP"},
