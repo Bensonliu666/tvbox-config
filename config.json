@@ -251,6 +251,7 @@
     {"key":"應用商店","name":"應用商店","type":3,"searchable":0,"changeable":0,"api":"csp_Market","ext":"./json/market.json"},
 
     {"key":"lf_js_lf_live","name":"直播","type":3,"searchable":1,"quickSearch":1,"filterable":1,"changeable":0,"style":{"type":"oval"},"api":"./lib/lf_live_min.js","ext":"./js/lf_live.txt"},
-    {"key":"XBPQ_樱之空","name":"樱之空","type":3,"searchable":1,"quickSearch":1,"filterable":1,"changeable":1,"timeout":60,"jar":"./jar/XBPQ_upgraded.jar","api":"csp_XBPQ","ext":"./XBPQ/樱之空.json"}
+    {"key":"XBPQ_樱之空","name":"樱之空","type":3,"searchable":1,"quickSearch":1,"filterable":1,"changeable":1,"timeout":60,"jar":"./jar/XBPQ_upgraded.jar","api":"csp_XBPQ","ext":"./XBPQ/樱之空.json"},
+    {"key":"bili_direct","name":"哔哩 · 直连","type":3,"searchable":1,"quickSearch":1,"filterable":0,"changeable":0,"style":{"type":"rect","ratio":1.6},"api":"./js/bili_v3.js"}
   ]
 }
