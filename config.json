@@ -21,10 +21,6 @@
   "ads": ["mimg.0c1q0l.cn","www.googletagmanager.com","www.google-analytics.com","mc.usihnbcq.cn","mg.g1mm3d.cn","mscs.svaeuzh.cn","cnzz.hhttm.top","tp.vinuxhome.com","cnzz.mmstat.com","www.baihuillq.com","s23.cnzz.com","z3.cnzz.com","c.cnzz.com","stj.v1vo.top","z12.cnzz.com","img.mosflower.cn","tips.gamevvip.com","ehwe.yhdtns.com","xdn.cqqc3.com","www.jixunkyy.cn","sp.chemacid.cn","hm.baidu.com","s9.cnzz.com","z6.cnzz.com","um.cavuc.com","mav.mavuz.com","wofwk.aoidf3.com","z5.cnzz.com","xc.hubeijieshikj.cn","tj.tianwenhu.com","xg.gars57.cn","k.jinxiuzhilv.com","cdn.bootcss.com","ppl.xunzhuo123.com","xomk.jiangjunmh.top","img.xunzhuo123.com","z1.cnzz.com","s13.cnzz.com","xg.huataisangao.cn","z7.cnzz.com","z2.cnzz.com","s96.cnzz.com","q11.cnzz.com","thy.dacedsfa.cn","xg.whsbpw.cn","s19.cnzz.com","z8.cnzz.com","s4.cnzz.com","f5w.as12df.top","ae01.alicdn.com","www.92424.cn","k.wudejia.com","vivovip.mmszxc.top","qiu.xixiqiu.com","cdnjs.hnfenxun.com","cms.qdwght.com","iqiyi.hbuioo.com","vip.ffzyad.com","wan.51img1.com","lf1-cdn-tos.bytegoofy.com","static-mozai.4gtv.tv","s3t3d2y8.afcdn.net"],
   "hosts": ["cache.ott.ystenlive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com","cache.ott.bestlive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com","cache.ott.wasulive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com","cache.ott.fifalive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com","cache.ott.hnbblive.itv.cmvideo.cn=base-v4-free-mghy.e.cdn.chinamobile.com"],
   "sites": [
-
-  	{"key":"路漫漫1","name":"路漫漫 1• 动漫","type":3,"api":"https://pan.29o.cn/down.php/136fd915b6164bb2dcec424a091bb699.js","ext":"./js/LMM.js"},
-    {"key":"去看吧1","name":"去看吧1 • 动漫","type":3,"api":"https://pan.29o.cn/down.php/136fd915b6164bb2dcec424a091bb699.js","ext":"./js/QKB.js"},
-
     {"key":"drpy_js_豆瓣","name":"搜索 • 豆瓣","type":3,"searchable":1,"quickSearch":0,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/drpy.js"},
     {"key":"csp_YGP","name":"预告片","type":3,"searchable":1,"quickSearch":1,"changeable":0,"api":"csp_YGP"},
     {"key":"drpy_js_360影视","name":"官源 • 360","type":3,"api":"./lib/drpy2.min.js","ext":"./js/360影视.js"},
@@ -35,7 +31,7 @@
     {"key":"drpy_js_菜狗","name":"官源 • 搜狗","type":3,"api":"./lib/drpy2.min.js","ext":"./js/菜狗.js"},
     {"key":"drpy_js_播客","name":"聚合 • 播客","type":3,"api":"./lib/drpy2.min.js","ext":"./js/播客.js"},
     {"key":"drpy_js_酷6网","name":"聚合 • 酷6网","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/酷6网.js"},
-
+	  
     {"key":"drpy_js_电影港","name":"电影港[js]","type":3,"searchable":1,"quickSearch":1,"changeable":1,"playerType":1,"timeout":30,"api":"./lib/drpy2.min.js","ext":"./js/dygang.js"},
     {"key":"drpy_js_xb6v","name":"新版6v[js]","type":3,"searchable":1,"quickSearch":1,"changeable":1,"playerType":1,"timeout":30,"api":"./lib/drpy2.min.js","ext":"./js/xb6v.js"},
     {"key":"cupfox_in","name":"茶杯狐 • cupfox.in","type":3,"searchable":1,"quickSearch":1,"filterable":0,"changeable":1,"header":{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"},"api":"./lib/drpy2.min.js","ext":"./js/茶杯狐.js"},
@@ -202,7 +198,7 @@
     {"key":"瓜子体育","name":"瓜子 • 体育","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"csp_SportsGuazi"},
     {"key":"咖啡体育","name":"咖啡 • 体育","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"csp_SportsKafei"},
     {"key":"88js","name":"88看球","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"./lib/drpy.min.js","ext":"./js/88看球.js"},
-	  
+	{"key":"88j3s","name":"883看球","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"./lib/drpy2.min.js","ext":"./js/88看球.js"},
     {"key":"drpy_js_评书随身听","name":"评书┃评书随身听[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/评书随身听.js"},
     {"key":"drpy_js_相声随身听","name":"相声┃相声随身听[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/相声随身听.js"},
     {"key":"drpy_js_蜻蜓FM","name":"广播┃蜻蜓FM[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/蜻蜓FM.js"},
@@ -220,9 +216,6 @@
     {"key":"drpy_js_童趣","name":"少儿┃童趣[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/童趣.js"},
     {"key":"drpy_js_兔小贝","name":"少儿┃兔小贝[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/兔小贝.js"},
     {"key":"drpy_js_NyaFun","name":"动漫┃NyaFun[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/NyaFun.js"},
-    {"key":"路漫漫","name":"路漫漫┃动漫[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/LMM.js"},
-    {"key":"去看吧","name":"去看吧┃动漫[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/QKB.js"},
-
 	  
     {"key":"戏曲多多","name":"戏曲 • 多多","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"csp_AppLY"},
     {"key":"贝乐虎","name":"贝乐虎 • 儿童","type":3,"searchable":1,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_BeiLeHu"},
