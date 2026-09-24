@@ -39,34 +39,9 @@
     {"key":"新闪雷","name":"新闪雷 • MP4","type":3,"header":{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"},"api":"./lib/drpy2.min.js","ext":"./js/新闪雷.js"},
     {"key":"闪雷","name":"闪雷 • MP4","type":3,"header":{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"},"api":"./lib/drpy2.min.js","ext":"./js/678.js"},
 
-    {"key":"drpy_js_评书随身听","name":"评书┃评书随身听[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/评书随身听.js"},
-    {"key":"drpy_js_相声随身听","name":"相声┃相声随身听[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/相声随身听.js"},
-    {"key":"drpy_js_蜻蜓FM","name":"广播 • 蜻蜓FM","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/蜻蜓FM.js"},
-    {"key":"drpy_js_博看听书","name":"听书 • 博看听书","type":3,"changeable":0,"style":{"type":"rect","ratio":1},"api":"./lib/drpy2.min.js","ext":"./js/博看听书.js"},
-    {"key":"drpy_js_i275听书","name":"听书┃i275听书[js]","type":3,"changeable":0,"style":{"type":"rect","ratio":1},"api":"./lib/drpy2.min.js","ext":"./js/i275听书.js"},
-    {"key":"drpy_js_广播迷FM","name":"广播┃广播迷FM[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/广播迷FM.js"},
-    {"key":"drpy_js_A8音乐","name":"音频 • A8音乐","type":3,"api":"./lib/drpy2.min.js","ext":"./js/A8音乐.js"},
-    {"key":"drpy_js_DJ音乐","name":"音频 • DJ音乐","type":3,"changeable":0,"style":{"type":"rect","ratio":1},"api":"./lib/drpy2.min.js","ext":"./js/DJ音乐.js"},
-    {"key":"drpy_js_好趣网","name":"电视┃好趣网[js]","type":3,"changeable":0,"style":{"type":"oval","ratio":1.1},"api":"./lib/drpy2.min.js","ext":"./js/好趣网.js"},
 
 
-    {"key":"drpy_js_哔哩直播","name":"弹幕┃哔哩直播[js]","type":3,"changeable":0,"style":{"type":"rect","ratio":1.597},"api":"./lib/drpy2.min.js","ext":"./js/哔哩直播.js"},
-    {"key":"drpy_js_斗鱼直播","name":"直播┃斗鱼[js]","type":3,"changeable":0,"style":{"type":"rect","ratio":1.597},"api":"./lib/drpy2.min.js","ext":"./js/斗鱼直播.js"},
-    {"key":"drpy_js_虎牙直播","name":"直播┃虎牙[js]","type":3,"changeable":0,"style":{"type":"rect","ratio":1.597},"api":"./lib/drpy2.min.js","ext":"./js/虎牙直播.js"},
-    {"key":"drpy_js_路漫漫","name":"动漫 • 路漫漫","type":3,"api":"./lib/drpy2.min.js","ext":"./js/路漫漫.js"},
-    {"key":"drpy_js_去看吧","name":"动漫 • 去看吧","type":3,"api":"./lib/drpy2.min.js","ext":"./js/去看吧.js"},
-    {"key":"drpy_js_童趣","name":"少儿┃童趣[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/童趣.js"},
-    {"key":"drpy_js_兔小贝","name":"少儿┃兔小贝[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/兔小贝.js"},
-    {"key":"drpy_js_NyaFun","name":"动漫┃NyaFun[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/NyaFun.js"},
-    {"key":"路漫漫","name":"路漫漫 • 动漫","type":3,"api":"./lib/drpy2.min.js","ext":"./js/LMM.js"},
-    {"key":"去看吧","name":"去看吧 • 动漫","type":3,"api":"./lib/drpy2.min.js","ext":"./js/QKB.js"},
 
-
-	  
-  
-
-	  
-	  
 
 
     {"key":"光影","name":"🌞光影┃不卡","type":3,"searchable":1,"quickSearch":1,"changeable":0,"jar":"./jar/fan.txt","api":"csp_T4Guard","ext":"rfOIzPkSUkANv6AT2prC8en3+Trbx4j10CIoZMv3Ag4bdEYQqTMqu/Z3YPtC2NJv6n6YeZdgyWlo4WJjBL5gUt6B7LvCEDT4CLrWka31GRq7jwVkfQRB/Jy9HkG7E8xUBIJi5DdVFk3qAuGnwUWqQNRblRxzHW+tdSm6zoFcG/QkZ97bzWOXn0fzbgwjBDkBHgcPIYjlULlctCNKgJ9DzGNSl+zMZDZgmxczsZeeahRS38Cst3qvaHn1T2lmLBGVGXPaRovi77LPRRDOJSNRrdpvCHdRikYwgar0MU56hXMGeGBiKp/OmGTIYR8dFRGvZ/m8xGOqs8U13h6wvADOGlYoP9VaQBqTcDnz9Q0Urhw3oFXWyvIlUrDhX9la5L2NYzagbyk3afqhxeSXXp07nAFsNy2CojHRTbmz4eohLoIJTSi2DzPpheVx1DAapfgRdTc7Ax5ddYpN338GiDAa0GnEgLe04a1pZ5jF+/Q7HJswqlSO+DXCQ3FjRbb/ZPQcozcCWwzhUHE1QUAt799V9DPMuiHGyudIcZarGQmezB+Lb45RdHIRy0PXD+NRVPJlfDFD5FMGSqsiVklibvuwlVHT8J5vHgh/1nEZoI1RlYYLrkjTts2EeQmrpB/sgLyo1vnjFw=="},
@@ -179,19 +154,8 @@
  
 
 
-	  
-    {"key":"戏曲多多","name":"戏曲 • 多多","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"csp_AppLY"},
-    {"key":"贝乐虎","name":"贝乐虎 • 儿童","type":3,"searchable":1,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_BeiLeHu"},
-    {"key":"相声","name":"相声","type":3,"searchable":0,"quickSearch":0,"style":{"type":"rect","ratio":1.597},"jar":"./jar/XBPQ_upgraded.jar","api":"csp_XBPQ","ext":"./XBPQ/相声.json"},
-    {"key":"评书","name":"评书","type":3,"searchable":0,"quickSearch":0,"style":{"type":"rect","ratio":1.597},"jar":"./jar/XBPQ_upgraded.jar","api":"csp_XBPQ","ext":"./XBPQ/评书.json"},
-    {"key":"世界听书","name":"世界 • 听书","type":3,"searchable":1,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"csp_TingShijie"},
-    {"key":"堇夏听书","name":"堇夏 • 听书","type":3,"searchable":1,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"csp_TingJinxia","ext":"https://m.ting15.com"},
-    {"key":"博看听书","name":"博看 • 听书","type":3,"searchable":1,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"csp_TingBokan"},
-    {"key":"有声小说","name":"🎧有声┃小说","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1},"jar":"./jar/fan.txt","api":"csp_Tingshu275Guard"},
-    {"key":"呦呦DJ","name":"呦呦 • DJ","type":3,"searchable":1,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"csp_Djuu"},
-    {"key":"酷狗","name":"酷狗","type":3,"searchable":1,"changeable":0,"api":"csp_Kugou"},
 
-    {"key":"MTV1","name":"🎙️易听音乐┃带歌词","type":3,"searchable":0,"quickSearch":0,"changeable":0,"playerType":2,"style":{"type":"rect","ratio":1},"jar":"./jar/fan.txt","api":"csp_MusicGuard"},
+ 
     {"key":"csp_Bili","name":"🅱️┃哔哩┃","type":3,"searchable":1,"quickSearch":1,"filterable":1,"changeable":0,"style":{"type":"rect","ratio":1.755},"api":"csp_Bili","ext":{"json":"./json/bili.json","cookie":""}},
     {"key":"哔哩合集","name":"🅱️┃哔哩┃合集","type":3,"searchable":1,"quickSearch":0,"filterable":0,"changeable":0,"style":{"type":"rect","ratio":1.433},"api":"csp_Bili","ext":{"n":"哔哩合集","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
     {"key":"哔哩视频","name":"🅱️┃哔哩┃视频","type":3,"searchable":1,"quickSearch":0,"filterable":0,"changeable":0,"style":{"type":"rect","ratio":1.433},"api":"csp_BiliYS","ext":{"cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
@@ -203,21 +167,21 @@
     {"key":"搭讪教程","name":"💋┃搭讪┃教程","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/搭讪.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
     {"key":"搭配教程","name":"💃┃搭配┃教程","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/搭配.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
     {"key":"中医药区","name":"🅱️┃中医┃药区","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/中医.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
-    {"key":"csp_Bili_xuqu1","name":"🅱️┃戏曲┃合集","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/戏曲.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
-    {"key":"csp_Bili_TYjs","name":"🅱️┃体育┃健身","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/体育.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
-    {"key":"csp_Bili_xiangsh","name":"🅱️┃相声┃小品","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/相声.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
-    {"key":"csp_Bili_FBqx","name":"🅱️┃球队┃球星","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/球队.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
-    {"key":"csp_Bili_Meinvw","name":"🅱️┃美女┃舞蹈","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/美女.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
-    {"key":"csp_Bili_yanchh","name":"🅱️┃歌手┃合集","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/歌手.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
-    {"key":"csp_Bili_Nvtuan","name":"🅱️┃女团┃热舞","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/女团.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
-    {"key":"csp_Bili_MTV","name":"🅱️┃歌曲┃演唱","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/歌曲.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
-    {"key":"csp_Bili_Yinl2","name":"🅱️┃音悦┃合集","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/音悦.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
+    {"key":"戏曲合集","name":"🅱️┃戏曲┃合集","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/戏曲.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
+    {"key":"体育健身","name":"🅱️┃体育┃健身","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/体育.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
+    {"key":"相声小品","name":"🅱️┃相声┃小品","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/相声.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
+    {"key":"球队球星","name":"🅱️┃球队┃球星","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/球队.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
+    {"key":"美女舞蹈","name":"🅱️┃美女┃舞蹈","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/美女.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
+    {"key":"歌手合集","name":"🅱️┃歌手┃合集","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/歌手.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
+    {"key":"女团热舞","name":"🅱️┃女团┃热舞","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/女团.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
+    {"key":"歌曲演唱","name":"🅱️┃歌曲┃演唱","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/歌曲.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
+    {"key":"音悦合集","name":"🅱️┃音悦┃合集","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/音悦.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
     {"key":"哔哩哔哩相声","name":"🅱️┃相声┃合集","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_Bili","ext":{"n":"哔哩相声","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
     {"key":"哔哩哔哩小品","name":"🅱️┃小品┃合集","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_Bili","ext":{"n":"哔哩小品","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
     {"key":"哔哩哔哩戏曲","name":"🅱️┃戏曲┃合集","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_Bili","ext":{"n":"哔哩戏曲","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
     {"key":"哔哩哔哩听书","name":"🅱️┃听书┃合集","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_Bili","ext":{"n":"哔哩听书","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
     {"key":"哔哩哔哩音乐","name":"🅱️┃音乐┃合集","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_Bili","ext":{"n":"哔哩音乐","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
-    {"key":"js_B站精简_liucn","name":"🅱️┃哔哩┃精简","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"ext":{"json":"./json/B站精简_liucn.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"changeable":0,"style":{"type":"rect","ratio":1.618}},
+    {"key":"js_B站精简","name":"🅱️┃哔哩┃精简","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"ext":{"json":"./json/B站精简_liucn.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"changeable":0,"style":{"type":"rect","ratio":1.618}},
 
 
 	  
@@ -234,9 +198,40 @@
     {"key":"吃瓜","name":"🏐吃瓜┃看球","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"list"},"jar":"./jar/fan.txt","api":"csp_LiveGzGuard"},
     {"key":"瓜子体育","name":"瓜子 • 体育","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"csp_SportsGuazi"},
     {"key":"咖啡体育","name":"咖啡 • 体育","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"csp_SportsKafei"},
-
     {"key":"88js","name":"88看球","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"./lib/drpy.min.js","ext":"./js/88看球.js"},
+	  
+    {"key":"drpy_js_评书随身听","name":"评书┃评书随身听[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/评书随身听.js"},
+    {"key":"drpy_js_相声随身听","name":"相声┃相声随身听[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/相声随身听.js"},
+    {"key":"drpy_js_蜻蜓FM","name":"广播┃蜻蜓FM[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/蜻蜓FM.js"},
+    {"key":"drpy_js_博看听书","name":"听书┃博看听书[js]","type":3,"changeable":0,"style":{"type":"rect","ratio":1},"api":"./lib/drpy2.min.js","ext":"./js/博看听书.js"},
+    {"key":"drpy_js_i275听书","name":"听书┃i275听书[js]","type":3,"changeable":0,"style":{"type":"rect","ratio":1},"api":"./lib/drpy2.min.js","ext":"./js/i275听书.js"},
+    {"key":"drpy_js_广播迷FM","name":"广播┃广播迷FM[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/广播迷FM.js"},
+    {"key":"drpy_js_A8音乐","name":"音频┃A8音乐[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/A8音乐.js"},
+    {"key":"drpy_js_DJ音乐","name":"音频┃DJ音乐[js]","type":3,"changeable":0,"style":{"type":"rect","ratio":1},"api":"./lib/drpy2.min.js","ext":"./js/DJ音乐.js"},
+    {"key":"drpy_js_好趣网","name":"电视┃好趣网[js]","type":3,"changeable":0,"style":{"type":"oval","ratio":1.1},"api":"./lib/drpy2.min.js","ext":"./js/好趣网.js"},
+    {"key":"drpy_js_哔哩直播","name":"弹幕┃哔哩直播[js]","type":3,"changeable":0,"style":{"type":"rect","ratio":1.597},"api":"./lib/drpy2.min.js","ext":"./js/哔哩直播.js"},
+    {"key":"drpy_js_斗鱼直播","name":"直播┃斗鱼[js]","type":3,"changeable":0,"style":{"type":"rect","ratio":1.597},"api":"./lib/drpy2.min.js","ext":"./js/斗鱼直播.js"},
+    {"key":"drpy_js_虎牙直播","name":"直播┃虎牙[js]","type":3,"changeable":0,"style":{"type":"rect","ratio":1.597},"api":"./lib/drpy2.min.js","ext":"./js/虎牙直播.js"},
+    {"key":"drpy_js_路漫漫","name":"动漫┃路漫漫[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/路漫漫.js"},
+    {"key":"drpy_js_去看吧","name":"动漫┃去看吧[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/去看吧.js"},
+    {"key":"drpy_js_童趣","name":"少儿┃童趣[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/童趣.js"},
+    {"key":"drpy_js_兔小贝","name":"少儿┃兔小贝[js]","type":3,"changeable":0,"api":"./lib/drpy2.min.js","ext":"./js/兔小贝.js"},
+    {"key":"drpy_js_NyaFun","name":"动漫┃NyaFun[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/NyaFun.js"},
+    {"key":"路漫漫","name":"路漫漫┃动漫[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/LMM.js"},
+    {"key":"去看吧","name":"去看吧┃动漫[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/QKB.js"},
 
+	  
+    {"key":"戏曲多多","name":"戏曲 • 多多","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"csp_AppLY"},
+    {"key":"贝乐虎","name":"贝乐虎 • 儿童","type":3,"searchable":1,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_BeiLeHu"},
+    {"key":"相声","name":"相声","type":3,"searchable":0,"quickSearch":0,"style":{"type":"rect","ratio":1.597},"jar":"./jar/XBPQ_upgraded.jar","api":"csp_XBPQ","ext":"./XBPQ/相声.json"},
+    {"key":"评书","name":"评书","type":3,"searchable":0,"quickSearch":0,"style":{"type":"rect","ratio":1.597},"jar":"./jar/XBPQ_upgraded.jar","api":"csp_XBPQ","ext":"./XBPQ/评书.json"},
+    {"key":"世界听书","name":"世界 • 听书","type":3,"searchable":1,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"csp_TingShijie"},
+    {"key":"堇夏听书","name":"堇夏 • 听书","type":3,"searchable":1,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"csp_TingJinxia","ext":"https://m.ting15.com"},
+    {"key":"博看听书","name":"博看 • 听书","type":3,"searchable":1,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"csp_TingBokan"},
+    {"key":"有声小说","name":"🎧有声┃小说","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1},"jar":"./jar/fan.txt","api":"csp_Tingshu275Guard"},
+    {"key":"呦呦DJ","name":"呦呦 • DJ","type":3,"searchable":1,"quickSearch":0,"changeable":0,"style":{"type":"list"},"api":"csp_Djuu"},
+    {"key":"酷狗","name":"酷狗","type":3,"searchable":1,"changeable":0,"api":"csp_Kugou"},
+    {"key":"MTV1","name":"🎙️易听音乐┃带歌词","type":3,"searchable":0,"quickSearch":0,"changeable":0,"playerType":2,"style":{"type":"rect","ratio":1},"jar":"./jar/fan.txt","api":"csp_MusicGuard"},
 	  
     {"key":"PushShare","name":"资源分享","type":3,"searchable":1,"quickSearch":1,"filterable":0,"changeable":1,"timeout":60,"style":{"type":"list"},"api":"csp_PushShare","ext":"./lib/token.json$$$./json/pushshare.txt$$$db$$$1"},
     {"key":"PikPakShare","name":"PikPak分享","type":3,"searchable":1,"quickSearch":1,"filterable":0,"changeable":1,"timeout":60,"api":"csp_PikPakShare","ext":"./lib/token.json$$$./json/pikpakclass.json$$$./json/pikpakclass.json.db.gz"},
