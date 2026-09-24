@@ -38,11 +38,6 @@
     {"key":"新闪雷","name":"新闪雷 • MP4","type":3,"header":{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"},"api":"./lib/drpy2.min.js","ext":"./js/新闪雷.js"},
     {"key":"闪雷","name":"闪雷 • MP4","type":3,"header":{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"},"api":"./lib/drpy2.min.js","ext":"./js/678.js"},
 
-
-
-
-
-
     {"key":"光影","name":"🌞光影┃不卡","type":3,"searchable":1,"quickSearch":1,"changeable":0,"jar":"./jar/fan.txt","api":"csp_T4Guard","ext":"rfOIzPkSUkANv6AT2prC8en3+Trbx4j10CIoZMv3Ag4bdEYQqTMqu/Z3YPtC2NJv6n6YeZdgyWlo4WJjBL5gUt6B7LvCEDT4CLrWka31GRq7jwVkfQRB/Jy9HkG7E8xUBIJi5DdVFk3qAuGnwUWqQNRblRxzHW+tdSm6zoFcG/QkZ97bzWOXn0fzbgwjBDkBHgcPIYjlULlctCNKgJ9DzGNSl+zMZDZgmxczsZeeahRS38Cst3qvaHn1T2lmLBGVGXPaRovi77LPRRDOJSNRrdpvCHdRikYwgar0MU56hXMGeGBiKp/OmGTIYR8dFRGvZ/m8xGOqs8U13h6wvADOGlYoP9VaQBqTcDnz9Q0Urhw3oFXWyvIlUrDhX9la5L2NYzagbyk3afqhxeSXXp07nAFsNy2CojHRTbmz4eohLoIJTSi2DzPpheVx1DAapfgRdTc7Ax5ddYpN338GiDAa0GnEgLe04a1pZ5jF+/Q7HJswqlSO+DXCQ3FjRbb/ZPQcozcCWwzhUHE1QUAt799V9DPMuiHGyudIcZarGQmezB+Lb45RdHIRy0PXD+NRVPJlfDFD5FMGSqsiVklibvuwlVHT8J5vHgh/1nEZoI1RlYYLrkjTts2EeQmrpB/sgLyo1vnjFw=="},
     {"key":"海绵","name":"🐬海绵┃不卡","type":3,"searchable":1,"quickSearch":1,"changeable":1,"playerType":"2","timeout":10,"jar":"./jar/fan.txt","api":"csp_HmysGuard"},
     {"key":"立播","name":"🌟立播┃不卡","type":3,"searchable":1,"quickSearch":1,"changeable":1,"timeout":10,"jar":"./jar/fan.txt","api":"csp_LibvioGuard","ext":{"Cloud-drive":"tvfan/Cloud-drive.txt","siteUrl":"https://www.libvio.pw/"}},
@@ -121,10 +116,9 @@
     {"key":"面包影视","name":"面包 • 影视","type":3,"api":"csp_XBPQ","ext":{"请求头":"User-Agent$MOBILE_UA","编码":"UTF-8","分类url":"https://v.aiwule.com/vodshow/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html","分类":"电影$20#电视剧$21#动漫$23#综艺$22#短剧$47","简介":"简介：&&"}},
     {"key":"永乐影视","name":"永乐 • 影视","type":3,"api":"csp_XBPQ","ext":{"请求头":"User-Agent$MOBILE_UA","编码":"UTF-8","分类":"电影$1#电视剧$2#综艺$3#动漫$4","类型":"动作片$6#喜剧片$7#爱情片$8#科幻片$9#奇幻片$10#恐怖片$11#剧情片$12#战争片$20#动画片$26#悬疑片$22#冒险片$23#犯罪片$24#惊悚片$45#歌舞片$46#灾难片$47#网络片$48||国产剧$13#港台剧$14#日剧$15#韩剧$33#欧美剧$16#泰剧$34#新马剧$35#其他剧$25||内地综艺$27#港台综艺$28#日本综艺$29#韩国综艺$36#欧美综艺$30#新马泰综艺$37#其他综艺$38||国产动漫$31#日本动漫$32#韩国动漫$39#港台动漫$40#新马泰动漫$41#欧美动漫$42#其他动漫$43","分类url":"https://www.ylys.tv/vodshow/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html"}},
     {"key":"剧圈影视","name":"剧圈 • 影视","type":3,"api":"csp_XYQHiker","ext":"./json/JQYS.json"},
-    {"key":"索尼","name":"影视 • 索尼[直连]","type":0,"searchable":1,"categories":["动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","欧美剧","港剧","台剧","韩剧","日剧","泰剧","纪录片","海外剧","大陆综艺","港台综艺","日韩综艺","欧美综艺","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫","影视解说"],"api":"https://suoniapi.com/api.php/provide/vod/at/xml/"},
     {"key":"XBPQ_黑狐影院","name":"黑狐影院","type":3,"jar":"./jar/XBPQ_upgraded.jar","api":"csp_XBPQ","ext":"./XBPQ/黑狐影院.json"},
-
-	
+	  
+    {"key":"索尼","name":"影视 • 索尼[直连]","type":0,"searchable":1,"categories":["动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","欧美剧","港剧","台剧","韩剧","日剧","泰剧","纪录片","海外剧","大陆综艺","港台综艺","日韩综艺","欧美综艺","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫","影视解说"],"api":"https://suoniapi.com/api.php/provide/vod/at/xml/"},
     {"key":"电影天堂","name":"影视 • 电影天堂[直连]","type":1,"searchable":1,"quickSearch":1,"filterable":1,"changeable":1,"playerType":2,"api":"http://caiji.dyttzyapi.com/api.php/provide/vod"},
     {"key":"天涯采集","name":"影视 • 天涯[直连]","type":1,"searchable":1,"quickSearch":1,"filterable":1,"changeable":1,"playerType":2,"style":{"type":"rect","ratio":1.33},"api":"http://tyyszy.com/api.php/provide/vod"},
     {"key":"建安采集","name":"影视 • 建安[直连]","type":1,"searchable":1,"quickSearch":1,"filterable":1,"changeable":1,"playerType":2,"style":{"type":"rect","ratio":1.33},"api":"http://154.219.117.232:9981/jacloudapi.php/provide/vod"},
@@ -151,10 +145,6 @@
     {"key":"蛋蛋魔法","name":"影视 • 蛋蛋魔法[直连]","type":1,"searchable":1,"quickSearch":1,"filterable":1,"api":"https://ddmf.net/api.php/provide/vod/?ac=list"},
     {"key":"ikunzy","name":"影视 🔰 ikun[直连]","type":1,"searchable":1,"quickSearch":1,"filterable":1,"api":"https://ikunzyapi.com/api.php/provide/vod?"},
  
-
-
-
- 
     {"key":"csp_Bili","name":"🅱️┃哔哩┃","type":3,"searchable":1,"quickSearch":1,"filterable":1,"changeable":0,"style":{"type":"rect","ratio":1.755},"api":"csp_Bili","ext":{"json":"./json/bili.json","cookie":""}},
     {"key":"哔哩合集","name":"🅱️┃哔哩┃合集","type":3,"searchable":1,"quickSearch":0,"filterable":0,"changeable":0,"style":{"type":"rect","ratio":1.433},"api":"csp_Bili","ext":{"n":"哔哩合集","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
     {"key":"哔哩视频","name":"🅱️┃哔哩┃视频","type":3,"searchable":1,"quickSearch":0,"filterable":0,"changeable":0,"style":{"type":"rect","ratio":1.433},"api":"csp_BiliYS","ext":{"cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
@@ -175,15 +165,13 @@
     {"key":"女团热舞","name":"🅱️┃女团┃热舞","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/女团.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
     {"key":"歌曲演唱","name":"🅱️┃歌曲┃演唱","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/歌曲.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
     {"key":"音悦合集","name":"🅱️┃音悦┃合集","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":{"json":"./json/音悦.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"style":{"type":"rect","ratio":1.618},"changeable":0},
-    {"key":"哔哩哔哩相声","name":"🅱️┃相声┃合集","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_Bili","ext":{"n":"哔哩相声","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
-    {"key":"哔哩哔哩小品","name":"🅱️┃小品┃合集","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_Bili","ext":{"n":"哔哩小品","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
-    {"key":"哔哩哔哩戏曲","name":"🅱️┃戏曲┃合集","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_Bili","ext":{"n":"哔哩戏曲","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
-    {"key":"哔哩哔哩听书","name":"🅱️┃听书┃合集","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_Bili","ext":{"n":"哔哩听书","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
-    {"key":"哔哩哔哩音乐","name":"🅱️┃音乐┃合集","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_Bili","ext":{"n":"哔哩音乐","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
+    {"key":"哔哩相声","name":"🅱️┃相声┃合集","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_Bili","ext":{"n":"哔哩相声","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
+    {"key":"哔哩小品","name":"🅱️┃小品┃合集","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_Bili","ext":{"n":"哔哩小品","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
+    {"key":"哔哩戏曲","name":"🅱️┃戏曲┃合集","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_Bili","ext":{"n":"哔哩戏曲","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
+    {"key":"哔哩听书","name":"🅱️┃听书┃合集","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_Bili","ext":{"n":"哔哩听书","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
+    {"key":"哔哩音乐","name":"🅱️┃音乐┃合集","type":3,"searchable":0,"quickSearch":0,"changeable":0,"style":{"type":"rect","ratio":1.618},"api":"csp_Bili","ext":{"n":"哔哩音乐","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
     {"key":"js_B站精简","name":"🅱️┃哔哩┃精简","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"ext":{"json":"./json/B站精简_liucn.json","cookie":"http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"},"changeable":0,"style":{"type":"rect","ratio":1.618}},
 
-
-	  
     {"key":"番社动漫","name":"番社 • 动漫","type":3,"style":{"type":"list"},"api":"csp_XBPQ","ext":{"请求头":"User-Agent$MOBILE_UA","编码":"UTF-8","主页url":"https://dora.xiaoxinbk.com/","数组":"class=\"card-img-bili\"&&</a>","标题":"alt=\"&&\"","图片":"data-url=\"&&\"","链接":"href=\"&&\"","线路标题":"mt-0\">&&</h3>","播放数组":"class=\"card-body button-list\"&&</div>","播放列表":"<a&&a>","播放链接":"href=\"&&\"","播放标题":">&&</","分类url":"https://www.dora-video.cn/search/sy/?niandai={year}&cat={class}&tag={cateId}&gaojijiansuo=1&zhuangtai={by}","分类":"全部$0#动画$20#剧场版$21#MV$22#预告片$23#直播$27#同人$25#民间$26#目录$28#中篇$30","剧情":"哆啦A梦新番$1#新哆啦A梦 台湾配音$2#哆啦A梦剧场版$3#最新预告片$6#剧场版集合$7#哆啦A梦MV$4#哆啦A梦七小子集合$11#生日特别篇$19#哆啦A梦生日特别篇$12#哆啦美生日特别篇$14#大雄生日特别篇$13#静香生日特别篇$15#胖虎生日特别篇$16#小夫生日特别篇$17#24小时直播$24#哆啦A梦中篇附映$29#哆啦A梦大山版 - 哆啦a梦1979版国语旧版 - 旧版$31#哆啦A梦大山修复&补档区$32#藤子·F·不二雄【其它动画】$33","排序":"全部$0#完结$2#连载$1#待定$-1"}},
     {"key":"双星99","name":"双星 • 动漫","type":3,"api":"csp_App99","ext":{"host":"http://111.180.139.119:19987/app/bn","LoginPath":"/app/log","versionName":"6.4.9","name":"双子星动漫","package":"com.haiwang.liangxia.my.ym","buildNumber":"2001","buildSignature":"A40DA80A59D170CAA950CF15C18C454D47A39B26989D8B640ECD745BA71BF5DC"}},
     {"key":"咕咕动漫","name":"咕咕 • 动漫","type":3,"searchable":1,"api":"csp_AppGet","ext":{"url":"https://www.gugu3.com","dataKey":"nKfZ8KX6JTNWRzTD","dataIv":"nKfZ8KX6JTNWRzTD"}},
@@ -247,7 +235,6 @@
     {"key":"天翼云盘","name":"天翼 • 云盘","type":3,"searchable":0,"filterable":0,"changeable":0,"style":{"type":"list","ratio":1.433},"api":"csp_PanTianyi"},
     {"key":"123云盘","name":"123 • 云盘","type":3,"searchable":0,"filterable":0,"changeable":0,"style":{"type":"list","ratio":1.433},"api":"csp_Pan123"},
 
-    
     {"key":"seed","name":"💡聚剧┃四盘","type":3,"searchable":1,"quickSearch":1,"changeable":0,"indexs":0,"jar":"./jar/fan.txt","api":"csp_SeedhubGuard","ext":"5++kwLhNYm9UrO9wh7Dl7eKamTee4s/5"},
     {"key":"抠搜","name":"🍄抠抠┃搜搜","type":3,"searchable":1,"quickSearch":1,"changeable":0,"api":"csp_KkSsGuard","ext":{"Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto"},"jar":"./jar/fan.txt"},
     {"key":"UC","name":"🌈优汐┃搜搜","type":3,"searchable":1,"quickSearch":1,"changeable":0,"api":"csp_UuSsGuard","ext":{"Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto"},"jar":"./jar/fan.txt"},
