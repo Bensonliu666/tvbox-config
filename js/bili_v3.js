@@ -1,8 +1,8 @@
-// ============ 哔哩 · 直连 v1.1 ============
-// 免代理、免登录 B 站源（TVBox v3 JS 源格式，不依赖 drpy2 / 9978 本地代理）
+// ============ 哔哩 · 直连 v1.2 ============
+// 免代理、免登录 B 站源（TVBox JS 源，async/await 异步格式，与 drpy2 系同引擎兼容）
 // 接口：首页推荐、分区、搜索、详情、播放（mp4 直链 / DASH 兜底）
 // 限制：匿名访问，登录才能看的高清/大会员内容不可用；清晰度自动降级到可用档
-// v1.1：修复 homeContent 缺少 class 分类字段；接口降级链增强；请求兼容性加强
+// v1.2：改为 async/await 全异步（兼容 TVBox 异步 fetch 引擎）；支持字符串/Promise/Response 三种 fetch 返回
 var biliUA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
 var buvid3 = "0879DFCE-E687-DB47-DCEF-2BE20B6DD7C043368infoc";
 var bNut = "1790278143";
@@ -30,16 +30,16 @@ var classList = (function () {
     return arr;
 })();
 
-// 兼容性请求：部分 TVBox 引擎 fetch 返回字符串（同步），部分返回对象（异步拿不到，走降级）
-function getJson(url) {
-    var txt;
+// 兼容三种 fetch：同步字符串 / Promise<string> / Promise<Response>
+async function getJson(url) {
     try {
-        txt = fetch(url, { headers: header });
+        var txt = await fetch(url, { headers: header });
+        if (txt && typeof txt === "object" && typeof txt.text === "function") txt = await txt.text();
+        if (typeof txt !== "string" || !txt) return null;
+        return JSON.parse(txt);
     } catch (e) {
-        try { txt = fetch(url); } catch (e2) { return null; }
+        return null;
     }
-    if (typeof txt !== "string" || !txt) return null;
-    try { return JSON.parse(txt); } catch (e) { return null; }
 }
 
 function videoItem(v) {
@@ -60,9 +60,9 @@ function videoItem(v) {
     return { vod_id: v.bvid, vod_name: v.title || "", vod_pic: pic, vod_remarks: remark };
 }
 
-function homeContent() {
+async function homeContent() {
     var list = [];
-    var j = getJson(apiHost + "/x/web-interface/index/top/feed/rcmd?ps=20&pn=1");
+    var j = await getJson(apiHost + "/x/web-interface/index/top/feed/rcmd?ps=20&pn=1");
     if (j && j.code === 0 && j.data && j.data.item) {
         var arr = j.data.item;
         for (var i = 0; i < arr.length; i++) {
@@ -71,7 +71,7 @@ function homeContent() {
         }
     }
     if (list.length === 0) {
-        var j2 = getJson(apiHost + "/x/web-interface/popular?ps=20&pn=1");
+        var j2 = await getJson(apiHost + "/x/web-interface/popular?ps=20&pn=1");
         if (j2 && j2.code === 0 && j2.data && j2.data.list) {
             var arr2 = j2.data.list;
             for (var k = 0; k < arr2.length; k++) {
@@ -83,13 +83,13 @@ function homeContent() {
     return JSON.stringify({ code: 0, msg: "", page: 1, pagecount: 1, limit: 20, list: list, class: classList });
 }
 
-function categoryContent(tid, pg) {
+async function categoryContent(tid, pg) {
     var page = parseInt(pg, 10) || 1;
     var rid = "0";
     if (tid && classes[tid]) rid = tid;
     var list = [];
     // 优先：分区推荐（rcmd 支持 rid）
-    var j = getJson(apiHost + "/x/web-interface/index/top/feed/rcmd?ps=20&pn=" + page + "&rid=" + rid);
+    var j = await getJson(apiHost + "/x/web-interface/index/top/feed/rcmd?ps=20&pn=" + page + "&rid=" + rid);
     if (j && j.code === 0 && j.data && j.data.item) {
         var arr = j.data.item;
         for (var i = 0; i < arr.length; i++) {
@@ -99,7 +99,7 @@ function categoryContent(tid, pg) {
     }
     // 备选 1：综合推荐
     if (list.length === 0) {
-        var j2 = getJson(apiHost + "/x/web-interface/index/top/feed/rcmd?ps=20&pn=" + page);
+        var j2 = await getJson(apiHost + "/x/web-interface/index/top/feed/rcmd?ps=20&pn=" + page);
         if (j2 && j2.code === 0 && j2.data && j2.data.item) {
             var arr2 = j2.data.item;
             for (var k = 0; k < arr2.length; k++) {
@@ -110,7 +110,7 @@ function categoryContent(tid, pg) {
     }
     // 备选 2：热门榜
     if (list.length === 0) {
-        var j3 = getJson(apiHost + "/x/web-interface/ranking?rid=" + rid + "&day=3");
+        var j3 = await getJson(apiHost + "/x/web-interface/ranking?rid=" + rid + "&day=3");
         if (j3 && j3.code === 0 && j3.data && j3.data.list) {
             var arr3 = j3.data.list;
             for (var m = 0; m < arr3.length; m++) {
@@ -122,9 +122,9 @@ function categoryContent(tid, pg) {
     return JSON.stringify({ code: 0, msg: "", page: page, pagecount: 10, limit: 20, list: list });
 }
 
-function searchContent(key) {
+async function searchContent(key) {
     var list = [];
-    var j = getJson(apiHost + "/x/web-interface/search/type?search_type=video&keyword=" + encodeURIComponent(key) + "&page=1");
+    var j = await getJson(apiHost + "/x/web-interface/search/type?search_type=video&keyword=" + encodeURIComponent(key) + "&page=1");
     if (j && j.code === 0 && j.data && j.data.result) {
         var arr = j.data.result;
         for (var i = 0; i < arr.length; i++) {
@@ -144,11 +144,11 @@ function searchContent(key) {
     return JSON.stringify({ code: 0, msg: "", page: 1, pagecount: 1, limit: 20, list: list });
 }
 
-function detailContent(ids) {
+async function detailContent(ids) {
     var id = ids[0];
     if (!id) return JSON.stringify({ list: [] });
     var bvid = id.split("+")[0];
-    var j = getJson(apiHost + "/x/web-interface/view?bvid=" + bvid);
+    var j = await getJson(apiHost + "/x/web-interface/view?bvid=" + bvid);
     if (!j || j.code !== 0 || !j.data) return JSON.stringify({ list: [] });
     var d = j.data;
     var pic = d.pic || "";
@@ -196,7 +196,7 @@ function buildMpd(videoList, audioList, duration) {
     return '<?xml version="1.0" encoding="UTF-8"?><MPD xmlns="urn:mpeg:dash:schema:mpd:2011" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" type="static" mediaPresentationDuration="PT' + duration + 'S" minBufferTime="PT1.5S"><Period duration="PT' + duration + 'S" start="PT0S">' + adap + '</Period></MPD>';
 }
 
-function playerContent(ids) {
+async function playerContent(ids) {
     var id = ids[0];
     if (!id) return JSON.stringify({ code: 200, msg: "", url: "" });
     var parts = id.split("+");
@@ -205,14 +205,14 @@ function playerContent(ids) {
     var qns = [64, 32, 16];
     for (var i = 0; i < qns.length; i++) {
         var u = apiHost + "/x/player/playurl?bvid=" + bvid + "&cid=" + cid + "&qn=" + qns[i] + "&fnval=0&fourk=1";
-        var j = getJson(u);
+        var j = await getJson(u);
         if (j && j.code === 0 && j.data && j.data.durl && j.data.durl.length) {
             var url = j.data.durl[0].url;
             return JSON.stringify({ code: 200, msg: "", url: url, header: header });
         }
     }
     // DASH 兜底（fnval=4048 拼 MPD）
-    var j2 = getJson(apiHost + "/x/player/playurl?bvid=" + bvid + "&cid=" + cid + "&qn=64&fnval=4048&fourk=1");
+    var j2 = await getJson(apiHost + "/x/player/playurl?bvid=" + bvid + "&cid=" + cid + "&qn=64&fnval=4048&fourk=1");
     if (j2 && j2.code === 0 && j2.data && j2.data.dash && j2.data.dash.video && j2.data.dash.video.length) {
         var dash = j2.data.dash;
         var dur = dash.duration || 0;
