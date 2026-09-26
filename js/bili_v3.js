@@ -1,8 +1,8 @@
-// ============ 哔哩 · 直连 v1.0 ============
+// ============ 哔哩 · 直连 v1.1 ============
 // 免代理、免登录 B 站源（TVBox v3 JS 源格式，不依赖 drpy2 / 9978 本地代理）
-// 接口：搜索、热门榜、分区榜、详情、播放（mp4 直链 / DASH 兜底）
+// 接口：首页推荐、分区、搜索、详情、播放（mp4 直链 / DASH 兜底）
 // 限制：匿名访问，登录才能看的高清/大会员内容不可用；清晰度自动降级到可用档
-// 内置匿名身份（buvid3），格式符合 B 站要求即可，无需真实登录
+// v1.1：修复 homeContent 缺少 class 分类字段；接口降级链增强；请求兼容性加强
 var biliUA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
 var buvid3 = "0879DFCE-E687-DB47-DCEF-2BE20B6DD7C043368infoc";
 var bNut = "1790278143";
@@ -13,25 +13,32 @@ var header = {
     "Referer": webHost + "/",
     "Cookie": "buvid3=" + buvid3 + "; b_nut=" + bNut
 };
-// 分区 rid 表（ranking/v2 可用 rid）
+// 分区 rid 表（rcmd 支持 rid 参数）
 var classes = {
     "0": "综合热门", "1": "动画", "13": "番剧", "167": "国创", "3": "音乐",
     "129": "舞蹈", "4": "游戏", "36": "科技", "188": "数码", "160": "生活",
     "119": "鬼畜", "155": "时尚", "5": "娱乐", "181": "影视", "17": "纪录片",
     "23": "电影", "11": "电视剧", "6": "知识", "138": "运动", "223": "汽车"
 };
-
-function req(url) {
-    try {
-        return fetch(url, { headers: header });
-    } catch (e) {
-        return "";
+// 分类数组（TVBox homeContent 的 class 字段）
+var classList = (function () {
+    var arr = [], k, ks = ["0", "1", "13", "167", "3", "129", "4", "36", "188", "160", "119", "155", "5", "181", "17", "23", "11", "6", "138", "223"];
+    for (var i = 0; i < ks.length; i++) {
+        k = ks[i];
+        arr.push({ type_id: k, type_name: classes[k] });
     }
-}
+    return arr;
+})();
 
+// 兼容性请求：部分 TVBox 引擎 fetch 返回字符串（同步），部分返回对象（异步拿不到，走降级）
 function getJson(url) {
-    var txt = req(url);
-    if (!txt) return null;
+    var txt;
+    try {
+        txt = fetch(url, { headers: header });
+    } catch (e) {
+        try { txt = fetch(url); } catch (e2) { return null; }
+    }
+    if (typeof txt !== "string" || !txt) return null;
     try { return JSON.parse(txt); } catch (e) { return null; }
 }
 
@@ -63,7 +70,6 @@ function homeContent() {
             if (it.vod_id) list.push(it);
         }
     }
-    // 备选：rcmd 失败时用 popular
     if (list.length === 0) {
         var j2 = getJson(apiHost + "/x/web-interface/popular?ps=20&pn=1");
         if (j2 && j2.code === 0 && j2.data && j2.data.list) {
@@ -74,7 +80,7 @@ function homeContent() {
             }
         }
     }
-    return JSON.stringify({ code: 0, msg: "", page: 1, pagecount: 1, limit: 20, list: list });
+    return JSON.stringify({ code: 0, msg: "", page: 1, pagecount: 1, limit: 20, list: list, class: classList });
 }
 
 function categoryContent(tid, pg) {
@@ -82,6 +88,7 @@ function categoryContent(tid, pg) {
     var rid = "0";
     if (tid && classes[tid]) rid = tid;
     var list = [];
+    // 优先：分区推荐（rcmd 支持 rid）
     var j = getJson(apiHost + "/x/web-interface/index/top/feed/rcmd?ps=20&pn=" + page + "&rid=" + rid);
     if (j && j.code === 0 && j.data && j.data.item) {
         var arr = j.data.item;
@@ -90,7 +97,7 @@ function categoryContent(tid, pg) {
             if (it.vod_id) list.push(it);
         }
     }
-    // 备选：分区推荐失败时退回综合
+    // 备选 1：综合推荐
     if (list.length === 0) {
         var j2 = getJson(apiHost + "/x/web-interface/index/top/feed/rcmd?ps=20&pn=" + page);
         if (j2 && j2.code === 0 && j2.data && j2.data.item) {
@@ -98,6 +105,17 @@ function categoryContent(tid, pg) {
             for (var k = 0; k < arr2.length; k++) {
                 var it2 = videoItem(arr2[k]);
                 if (it2.vod_id) list.push(it2);
+            }
+        }
+    }
+    // 备选 2：热门榜
+    if (list.length === 0) {
+        var j3 = getJson(apiHost + "/x/web-interface/ranking?rid=" + rid + "&day=3");
+        if (j3 && j3.code === 0 && j3.data && j3.data.list) {
+            var arr3 = j3.data.list;
+            for (var m = 0; m < arr3.length; m++) {
+                var it3 = videoItem(arr3[m]);
+                if (it3.vod_id) list.push(it3);
             }
         }
     }
@@ -119,7 +137,8 @@ function searchContent(key) {
                 var ps = n >= 10000 ? (n / 10000).toFixed(1) + "万" : "" + n;
                 remark = remark ? remark + " · " + ps + "播放" : ps + "播放";
             }
-            list.push({ vod_id: v.bvid, vod_name: v.title ? v.title.replace(/<em[^>]*>/g, "").replace(/<\/em>/g, "") : "", vod_pic: pic, vod_remarks: remark });
+            var name = v.title ? v.title.replace(/<em[^>]*>/g, "").replace(/<\/em>/g, "") : "";
+            list.push({ vod_id: v.bvid, vod_name: name, vod_pic: pic, vod_remarks: remark });
         }
     }
     return JSON.stringify({ code: 0, msg: "", page: 1, pagecount: 1, limit: 20, list: list });
@@ -134,8 +153,6 @@ function detailContent(ids) {
     var d = j.data;
     var pic = d.pic || "";
     if (pic.indexOf("http") !== 0) pic = "https:" + pic;
-    var playUrls = [], playFrom = [];
-    // 播放 id 约定：bvid+cid（playerContent 里 split("+") 还原）
     var pages = (d.pages && d.pages.length) ? d.pages : [{ cid: d.cid }];
     var eps = [];
     for (var i = 0; i < pages.length; i++) {
@@ -159,7 +176,7 @@ function detailContent(ids) {
 
 function buildMpd(videoList, audioList, duration) {
     // 参考 CatVod Bili 实现的 MPD 拼接；dash 字段为 snake_case（segment_base）
-    var body = "", adap = "";
+    var adap = "";
     for (var i = 0; i < videoList.length; i++) {
         var v = videoList[i];
         var sb = v.segment_base || v.SegmentBase || {};
@@ -176,8 +193,7 @@ function buildMpd(videoList, audioList, duration) {
         adap += '<Representation id="a' + i2 + '" bandwidth="' + (a.bandwidth || 100000) + '" codecs="' + (a.codecs || "") + '" audioSamplingRate="44100">';
         adap += '<BaseURL>' + (a.baseUrl || a.base_url) + '</BaseURL><SegmentBase indexRange="' + (sb2.index_range || "") + '" timescale="' + (sb2.timescale || 1) + '"><Initialization range="' + (sb2.initialization || "") + '"/></SegmentBase></Representation></AdaptationSet>';
     }
-    body = '<?xml version="1.0" encoding="UTF-8"?><MPD xmlns="urn:mpeg:dash:schema:mpd:2011" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" type="static" mediaPresentationDuration="PT' + duration + 'S" minBufferTime="PT1.5S"><Period duration="PT' + duration + 'S" start="PT0S">' + adap + '</Period></MPD>';
-    return body;
+    return '<?xml version="1.0" encoding="UTF-8"?><MPD xmlns="urn:mpeg:dash:schema:mpd:2011" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" type="static" mediaPresentationDuration="PT' + duration + 'S" minBufferTime="PT1.5S"><Period duration="PT' + duration + 'S" start="PT0S">' + adap + '</Period></MPD>';
 }
 
 function playerContent(ids) {
@@ -185,7 +201,7 @@ function playerContent(ids) {
     if (!id) return JSON.stringify({ code: 200, msg: "", url: "" });
     var parts = id.split("+");
     var bvid = parts[0], cid = parts[1] || "";
-    // 尝试直链（fnval=0, qn 降级）
+    // 尝试直链（fnval=0, qn 降级 64→32→16）
     var qns = [64, 32, 16];
     for (var i = 0; i < qns.length; i++) {
         var u = apiHost + "/x/player/playurl?bvid=" + bvid + "&cid=" + cid + "&qn=" + qns[i] + "&fnval=0&fourk=1";
@@ -199,7 +215,7 @@ function playerContent(ids) {
     var j2 = getJson(apiHost + "/x/player/playurl?bvid=" + bvid + "&cid=" + cid + "&qn=64&fnval=4048&fourk=1");
     if (j2 && j2.code === 0 && j2.data && j2.data.dash && j2.data.dash.video && j2.data.dash.video.length) {
         var dash = j2.data.dash;
-        var dur = j2.data.dash.duration || 0;
+        var dur = dash.duration || 0;
         var mpd = buildMpd(dash.video, dash.audio || [], dur);
         return JSON.stringify({ code: 200, msg: "", url: "data:text/plain;base64," + base64(mpd), header: header });
     }
