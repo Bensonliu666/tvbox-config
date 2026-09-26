@@ -132,10 +132,18 @@
     {"key": "飘零资源","name": "影视 • 飘零[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "https://p2100.net/api.php/provide/vod/"},
     {"key": "纯净资源","name": "影视 • 纯净[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "https://api.wsyzy.net/api.php/provide/vod/?ac=list"},
     {"key": "红牛资源","name": "影视 • 红牛[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "https://www.hongniuzy2.com/api.php/provide/vod/"},
-    {"key": "量子","name": "影视 • 量子[直连]","type": 1,"searchable": 1,"categories": ["动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","香港剧","韩国剧","欧美剧","记录片","台湾剧","日本剧","海外剧","泰国剧","大陆综艺","港台综艺","日韩综艺","欧美综艺","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫"],"api": "https://cj.lziapi.com/api.php/provide/vod/"},
-    {"key": "非凡","name": "影视 • 非凡[直连]","type": 1,"searchable": 1,"categories": ["动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","香港剧","韩国剧","欧美剧","记录片","台湾剧","日本剧","海外剧","泰国剧","大陆综艺","港台综艺","日韩综艺","欧美综艺","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫"],"api": "http://ffzy.tv/api.php/provide/vod/"},
-    {"key": "极速资源","name": "影视 • 极速[直连]","type": 1,"searchable": 1,"categories": ["欧美剧","香港剧","韩剧","日剧","马泰剧","动作片","爱情片","喜剧片","科幻片","恐怖片","剧情片","战争片","记录片","动漫","内地剧","动画片","中国动漫","日本动漫"," 欧美动漫","综艺","台湾剧","体育赛事","大陆综艺","日韩综艺","港台综艺","欧美综艺","灾难片","悬疑片","犯罪片","奇幻片","短剧"],"header": {"User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"},"api": "https://jszyapi.com/api.php/provide/vod/?ac=list"},
-    {"key": "百度","name": "百度[直连]","type": 1,"searchable": 1,"filterable": 0,"categories": ["国产动漫","日韩动漫","大陆剧","欧美剧","韩剧","日剧","动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片"],"header": {"User-Agent": "Mozilla/5.0"},"api": "https://api.apibdzy.com/api.php/provide/vod?ac=list"},
+
+    {"key": "量子","name": "影视 • 量子[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "https://cj.lziapi.com/api.php/provide/vod/"},
+    {"key": "非凡","name": "影视 • 非凡[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "http://ffzy.tv/api.php/provide/vod/"},
+    {"key": "极速资源","name": "影视 • 极速[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "https://jszyapi.com/api.php/provide/vod/?ac=list"},
+    {"key": "百度","name": "百度[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "https://api.apibdzy.com/api.php/provide/vod?ac=list"},
+   
+
+    
+    // {"key": "量子","name": "影视 • 量子[直连]","type": 1,"searchable": 1,"categories": ["动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","香港剧","韩国剧","欧美剧","记录片","台湾剧","日本剧","海外剧","泰国剧","大陆综艺","港台综艺","日韩综艺","欧美综艺","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫"],"api": "https://cj.lziapi.com/api.php/provide/vod/"},
+    // {"key": "非凡","name": "影视 • 非凡[直连]","type": 1,"searchable": 1,"categories": ["动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","香港剧","韩国剧","欧美剧","记录片","台湾剧","日本剧","海外剧","泰国剧","大陆综艺","港台综艺","日韩综艺","欧美综艺","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫"],"api": "http://ffzy.tv/api.php/provide/vod/"},
+    // {"key": "极速资源","name": "影视 • 极速[直连]","type": 1,"searchable": 1,"categories": ["欧美剧","香港剧","韩剧","日剧","马泰剧","动作片","爱情片","喜剧片","科幻片","恐怖片","剧情片","战争片","记录片","动漫","内地剧","动画片","中国动漫","日本动漫"," 欧美动漫","综艺","台湾剧","体育赛事","大陆综艺","日韩综艺","港台综艺","欧美综艺","灾难片","悬疑片","犯罪片","奇幻片","短剧"],"header": {"User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"},"api": "https://jszyapi.com/api.php/provide/vod/?ac=list"},
+    // {"key": "百度","name": "百度[直连]","type": 1,"searchable": 1,"filterable": 0,"categories": ["国产动漫","日韩动漫","大陆剧","欧美剧","韩剧","日剧","动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片"],"header": {"User-Agent": "Mozilla/5.0"},"api": "https://api.apibdzy.com/api.php/provide/vod?ac=list"},
     {"key": "暴風","name": "影视 • 暴風[直连]","type": 1,"searchable": 1,"changeable": 1,"api": "https://bfzyapi.com/api.php/provide/vod/?ac=list"},
     {"key": "蛋蛋魔法","name": "影视 • 蛋蛋魔法[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "https://ddmf.net/api.php/provide/vod/?ac=list"},
     {"key": "ikunzy","name": "影视 🔰 ikun[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "https://ikunzyapi.com/api.php/provide/vod?"},
