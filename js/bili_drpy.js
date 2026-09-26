@@ -7,6 +7,7 @@ var rule = {
     title: '哔哩直连',
     host: 'https://api.bilibili.com',
     url: '/x/web-interface/index/top/feed/rcmd?ps=20&pn=fypage&rid=fyclass',
+    detailUrl: '/x/web-interface/view?bvid=fyid',
     searchUrl: '/x/web-interface/search/type?search_type=video&keyword=**&page=fypage',
     searchable: 1,
     quickSearch: 1,
@@ -93,7 +94,7 @@ var rule = {
         let pages = (d.pages && d.pages.length) ? d.pages : [{ cid: d.cid }];
         let playurls = [];
         pages.forEach(function(p, i) {
-            let part = (p.part || ('P' + (i + 1))).replaceAll('#', '﹟').replaceAll('$', '﹩');
+            let part = (p.part || ('P' + (i + 1))).replace(/#/g, '﹟').replace(/\\$/g, '﹩');
             playurls.push(part + '$' + d.bvid + '_' + p.cid);
         });
         let vod = {
