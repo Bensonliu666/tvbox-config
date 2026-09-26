@@ -114,6 +114,7 @@
     {"key": "剧圈影视","name": "剧圈 • 影视","type": 3,"api": "csp_XYQHiker","ext": "./json/JQYS.json"},
     {"key": "XBPQ_黑狐影院","name": "黑狐影院","type": 3,"jar": "./jar/XBPQ_upgraded.jar","api": "csp_XBPQ","ext": "./XBPQ/黑狐影院.json"},
     {"key":"索尼","name":"影视 • 索尼[直连]","type":0,"searchable":1,"categories":["动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","欧美剧","港剧","台剧","韩剧","日剧","泰剧","纪录片","海外剧","大陆综艺","港台综艺","日韩综艺","欧美综艺","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫","影视解说"],"api":"https://suoniapi.com/api.php/provide/vod/at/xml/"},
+    {"key": "电影索尼","name": "影视 • 电影索尼[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"changeable": 1,"playerType": 2,"api": " https://suoniapi.com/api.php/provide/vod"},
     {"key": "电影天堂","name": "影视 • 电影天堂[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"changeable": 1,"playerType": 2,"api": "http://caiji.dyttzyapi.com/api.php/provide/vod"},
     {"key": "天涯采集","name": "影视 • 天涯[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"changeable": 1,"playerType": 2,"style": {"type": "rect","ratio": 1.33},"api": "http://tyyszy.com/api.php/provide/vod"},
     {"key": "建安采集","name": "影视 • 建安[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"changeable": 1,"playerType": 2,"style": {"type": "rect","ratio": 1.33},"api": "http://154.219.117.232:9981/jacloudapi.php/provide/vod"},
