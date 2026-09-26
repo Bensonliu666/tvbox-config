@@ -131,7 +131,6 @@
     "tj.tianwenhu.com",
     "xg.gars57.cn",
     "k.jinxiuzhilv.com",
-    "cdn.bootcss.com",
     "ppl.xunzhuo123.com",
     "xomk.jiangjunmh.top",
     "img.xunzhuo123.com",
@@ -160,7 +159,19 @@
     "wan.51img1.com",
     "lf1-cdn-tos.bytegoofy.com",
     "static-mozai.4gtv.tv",
-    "s3t3d2y8.afcdn.net"
+    "s3t3d2y8.afcdn.net",
+    "pos.baidu.com",
+    "cpro.baidu.com",
+    "umeng.com",
+    "log.mmstat.com",
+    "mmstat.com",
+    "gdt.qq.com",
+    "ad.oceanengine.com",
+    "td.mob.com",
+    "growingio.com",
+    "sensorsdata.cn",
+    "pstatp.com",
+    "pglstatp.com"
   ],
   "hosts": [],
   "sites": [
