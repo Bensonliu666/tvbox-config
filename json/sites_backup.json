@@ -1,0 +1,650 @@
+[
+ {
+  "key": "量子",
+  "name": "影视 • 量子[直连]",
+  "type": 1,
+  "searchable": 1,
+  "quickSearch": 1,
+  "filterable": 1,
+  "api": "https://cj.lziapi.com/api.php/provide/vod/"
+ },
+ {
+  "key": "非凡",
+  "name": "影视 • 非凡[直连]",
+  "type": 1,
+  "searchable": 1,
+  "quickSearch": 1,
+  "filterable": 1,
+  "api": "http://ffzy.tv/api.php/provide/vod/"
+ },
+ {
+  "key": "极速资源",
+  "name": "影视 • 极速[直连]",
+  "type": 1,
+  "searchable": 1,
+  "quickSearch": 1,
+  "filterable": 1,
+  "api": "https://jszyapi.com/api.php/provide/vod/?ac=list"
+ },
+ {
+  "key": "百度",
+  "name": "百度[直连]",
+  "type": 1,
+  "searchable": 1,
+  "quickSearch": 1,
+  "filterable": 1,
+  "api": "https://api.apibdzy.com/api.php/provide/vod?ac=list"
+ },
+ {
+  "key": "量子",
+  "name": "影视 • 量子[直连]",
+  "type": 1,
+  "searchable": 1,
+  "categories": [
+   "动作片",
+   "喜剧片",
+   "爱情片",
+   "科幻片",
+   "恐怖片",
+   "剧情片",
+   "战争片",
+   "国产剧",
+   "香港剧",
+   "韩国剧",
+   "欧美剧",
+   "记录片",
+   "台湾剧",
+   "日本剧",
+   "海外剧",
+   "泰国剧",
+   "大陆综艺",
+   "港台综艺",
+   "日韩综艺",
+   "欧美综艺",
+   "国产动漫",
+   "日韩动漫",
+   "欧美动漫",
+   "港台动漫",
+   "海外动漫"
+  ],
+  "api": "https://cj.lziapi.com/api.php/provide/vod/"
+ },
+ {
+  "key": "非凡",
+  "name": "影视 • 非凡[直连]",
+  "type": 1,
+  "searchable": 1,
+  "categories": [
+   "动作片",
+   "喜剧片",
+   "爱情片",
+   "科幻片",
+   "恐怖片",
+   "剧情片",
+   "战争片",
+   "国产剧",
+   "香港剧",
+   "韩国剧",
+   "欧美剧",
+   "记录片",
+   "台湾剧",
+   "日本剧",
+   "海外剧",
+   "泰国剧",
+   "大陆综艺",
+   "港台综艺",
+   "日韩综艺",
+   "欧美综艺",
+   "国产动漫",
+   "日韩动漫",
+   "欧美动漫",
+   "港台动漫",
+   "海外动漫"
+  ],
+  "api": "http://ffzy.tv/api.php/provide/vod/"
+ },
+ {
+  "key": "极速资源",
+  "name": "影视 • 极速[直连]",
+  "type": 1,
+  "searchable": 1,
+  "categories": [
+   "欧美剧",
+   "香港剧",
+   "韩剧",
+   "日剧",
+   "马泰剧",
+   "动作片",
+   "爱情片",
+   "喜剧片",
+   "科幻片",
+   "恐怖片",
+   "剧情片",
+   "战争片",
+   "记录片",
+   "动漫",
+   "内地剧",
+   "动画片",
+   "中国动漫",
+   "日本动漫",
+   " 欧美动漫",
+   "综艺",
+   "台湾剧",
+   "体育赛事",
+   "大陆综艺",
+   "日韩综艺",
+   "港台综艺",
+   "欧美综艺",
+   "灾难片",
+   "悬疑片",
+   "犯罪片",
+   "奇幻片",
+   "短剧"
+  ],
+  "header": {
+   "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
+  },
+  "api": "https://jszyapi.com/api.php/provide/vod/?ac=list"
+ },
+ {
+  "key": "百度",
+  "name": "百度[直连]",
+  "type": 1,
+  "searchable": 1,
+  "filterable": 0,
+  "categories": [
+   "国产动漫",
+   "日韩动漫",
+   "大陆剧",
+   "欧美剧",
+   "韩剧",
+   "日剧",
+   "动作片",
+   "喜剧片",
+   "爱情片",
+   "科幻片",
+   "恐怖片",
+   "剧情片",
+   "战争片"
+  ],
+  "header": {
+   "User-Agent": "Mozilla/5.0"
+  },
+  "api": "https://api.apibdzy.com/api.php/provide/vod?ac=list"
+ },
+ {
+  "key": "csp_Bili",
+  "name": "🅱️┃哔哩┃",
+  "type": 3,
+  "searchable": 1,
+  "quickSearch": 1,
+  "filterable": 1,
+  "changeable": 0,
+  "style": {
+   "type": "rect",
+   "ratio": 1.755
+  },
+  "api": "csp_Bili",
+  "ext": {
+   "json": "./json/bili.json",
+   "cookie": ""
+  }
+ },
+ {
+  "key": "哔哩合集3",
+  "name": "🅱️┃哔哩┃合集3",
+  "type": 3,
+  "searchable": 1,
+  "quickSearch": 0,
+  "filterable": 0,
+  "changeable": 0,
+  "style": {
+   "type": "rect",
+   "ratio": 1.433
+  },
+  "api": "csp_Bili",
+  "ext": {
+   "n": "哔哩合集",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  }
+ },
+ {
+  "key": "哔哩合集2",
+  "name": "🅱️┃哔哩┃合集2",
+  "type": 3,
+  "searchable": 1,
+  "quickSearch": 0,
+  "filterable": 0,
+  "changeable": 0,
+  "style": {
+   "type": "rect",
+   "ratio": 1.433
+  },
+  "api": "csp_Bili",
+  "ext": {
+   "n": "哔哩合集",
+   "cookie": ""
+  }
+ },
+ {
+  "key": "哔哩视频",
+  "name": "🅱️┃哔哩┃视频",
+  "type": 3,
+  "searchable": 1,
+  "quickSearch": 0,
+  "filterable": 0,
+  "changeable": 0,
+  "style": {
+   "type": "rect",
+   "ratio": 1.433
+  },
+  "api": "csp_BiliYS",
+  "ext": {
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  }
+ },
+ {
+  "key": "少儿教育",
+  "name": "🅱️┃少儿┃教育",
+  "type": 3,
+  "searchable": 0,
+  "quickSearch": 0,
+  "changeable": 0,
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "api": "csp_Bili",
+  "ext": {
+   "json": "./json/幼儿.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  }
+ },
+ {
+  "key": "小学课堂",
+  "name": "🅱️┃小学┃教育",
+  "type": 3,
+  "searchable": 0,
+  "quickSearch": 0,
+  "changeable": 0,
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "api": "csp_Bili",
+  "ext": {
+   "json": "./json/小学.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  }
+ },
+ {
+  "key": "初中课堂",
+  "name": "🅱️┃初中┃教育",
+  "type": 3,
+  "searchable": 0,
+  "quickSearch": 0,
+  "changeable": 0,
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "api": "csp_Bili",
+  "ext": {
+   "json": "./json/初中.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  }
+ },
+ {
+  "key": "高中课堂",
+  "name": "🅱️┃高中┃教育",
+  "type": 3,
+  "searchable": 0,
+  "quickSearch": 0,
+  "changeable": 0,
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "api": "csp_Bili",
+  "ext": {
+   "json": "./json/高中.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  }
+ },
+ {
+  "key": "哔哩合集",
+  "name": "🅱️┃哔哩┃合集",
+  "type": 3,
+  "api": "csp_Bili",
+  "searchable": 0,
+  "quickSearch": 0,
+  "filterable": 1,
+  "ext": {
+   "json": "./json/bili_liucn.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  },
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "changeable": 0
+ },
+ {
+  "key": "搭讪教程",
+  "name": "💋┃搭讪┃教程",
+  "type": 3,
+  "api": "csp_Bili",
+  "searchable": 0,
+  "quickSearch": 0,
+  "filterable": 1,
+  "ext": {
+   "json": "./json/搭讪.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  },
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "changeable": 0
+ },
+ {
+  "key": "搭配教程",
+  "name": "💃┃搭配┃教程",
+  "type": 3,
+  "api": "csp_Bili",
+  "searchable": 0,
+  "quickSearch": 0,
+  "filterable": 1,
+  "ext": {
+   "json": "./json/搭配.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  },
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "changeable": 0
+ },
+ {
+  "key": "中医药区",
+  "name": "🅱️┃中医┃药区",
+  "type": 3,
+  "api": "csp_Bili",
+  "searchable": 0,
+  "quickSearch": 0,
+  "filterable": 1,
+  "ext": {
+   "json": "./json/中医.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  },
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "changeable": 0
+ },
+ {
+  "key": "戏曲合集",
+  "name": "🅱️┃戏曲┃合集",
+  "type": 3,
+  "api": "csp_Bili",
+  "searchable": 0,
+  "quickSearch": 0,
+  "filterable": 1,
+  "ext": {
+   "json": "./json/戏曲.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  },
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "changeable": 0
+ },
+ {
+  "key": "体育健身",
+  "name": "🅱️┃体育┃健身",
+  "type": 3,
+  "api": "csp_Bili",
+  "searchable": 0,
+  "quickSearch": 0,
+  "filterable": 1,
+  "ext": {
+   "json": "./json/体育.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  },
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "changeable": 0
+ },
+ {
+  "key": "相声小品",
+  "name": "🅱️┃相声┃小品",
+  "type": 3,
+  "api": "csp_Bili",
+  "searchable": 0,
+  "quickSearch": 0,
+  "filterable": 1,
+  "ext": {
+   "json": "./json/相声.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  },
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "changeable": 0
+ },
+ {
+  "key": "球队球星",
+  "name": "🅱️┃球队┃球星",
+  "type": 3,
+  "api": "csp_Bili",
+  "searchable": 0,
+  "quickSearch": 0,
+  "filterable": 1,
+  "ext": {
+   "json": "./json/球队.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  },
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "changeable": 0
+ },
+ {
+  "key": "美女舞蹈",
+  "name": "🅱️┃美女┃舞蹈",
+  "type": 3,
+  "api": "csp_Bili",
+  "searchable": 0,
+  "quickSearch": 0,
+  "filterable": 1,
+  "ext": {
+   "json": "./json/美女.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  },
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "changeable": 0
+ },
+ {
+  "key": "歌手合集",
+  "name": "🅱️┃歌手┃合集",
+  "type": 3,
+  "api": "csp_Bili",
+  "searchable": 0,
+  "quickSearch": 0,
+  "filterable": 1,
+  "ext": {
+   "json": "./json/歌手.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  },
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "changeable": 0
+ },
+ {
+  "key": "女团热舞",
+  "name": "🅱️┃女团┃热舞",
+  "type": 3,
+  "api": "csp_Bili",
+  "searchable": 0,
+  "quickSearch": 0,
+  "filterable": 1,
+  "ext": {
+   "json": "./json/女团.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  },
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "changeable": 0
+ },
+ {
+  "key": "歌曲演唱",
+  "name": "🅱️┃歌曲┃演唱",
+  "type": 3,
+  "api": "csp_Bili",
+  "searchable": 0,
+  "quickSearch": 0,
+  "filterable": 1,
+  "ext": {
+   "json": "./json/歌曲.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  },
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "changeable": 0
+ },
+ {
+  "key": "音悦合集",
+  "name": "🅱️┃音悦┃合集",
+  "type": 3,
+  "api": "csp_Bili",
+  "searchable": 0,
+  "quickSearch": 0,
+  "filterable": 1,
+  "ext": {
+   "json": "./json/音悦.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  },
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "changeable": 0
+ },
+ {
+  "key": "哔哩相声",
+  "name": "🅱️┃相声┃合集",
+  "type": 3,
+  "searchable": 0,
+  "quickSearch": 0,
+  "changeable": 0,
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "api": "csp_Bili",
+  "ext": {
+   "n": "哔哩相声",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  }
+ },
+ {
+  "key": "哔哩小品",
+  "name": "🅱️┃小品┃合集",
+  "type": 3,
+  "searchable": 0,
+  "quickSearch": 0,
+  "changeable": 0,
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "api": "csp_Bili",
+  "ext": {
+   "n": "哔哩小品",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  }
+ },
+ {
+  "key": "哔哩戏曲",
+  "name": "🅱️┃戏曲┃合集",
+  "type": 3,
+  "searchable": 0,
+  "quickSearch": 0,
+  "changeable": 0,
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "api": "csp_Bili",
+  "ext": {
+   "n": "哔哩戏曲",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  }
+ },
+ {
+  "key": "哔哩听书",
+  "name": "🅱️┃听书┃合集",
+  "type": 3,
+  "searchable": 0,
+  "quickSearch": 0,
+  "changeable": 0,
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "api": "csp_Bili",
+  "ext": {
+   "n": "哔哩听书",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  }
+ },
+ {
+  "key": "哔哩音乐",
+  "name": "🅱️┃音乐┃合集",
+  "type": 3,
+  "searchable": 0,
+  "quickSearch": 0,
+  "changeable": 0,
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  },
+  "api": "csp_Bili",
+  "ext": {
+   "n": "哔哩音乐",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  }
+ },
+ {
+  "key": "哔哩精简",
+  "name": "🅱️┃哔哩┃精简",
+  "type": 3,
+  "api": "csp_Bili",
+  "searchable": 0,
+  "quickSearch": 0,
+  "ext": {
+   "json": "./json/B站精简_liucn.json",
+   "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+  },
+  "changeable": 0,
+  "style": {
+   "type": "rect",
+   "ratio": 1.618
+  }
+ }
+]
