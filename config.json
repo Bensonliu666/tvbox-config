@@ -133,10 +133,10 @@
     {"key": "纯净资源","name": "影视 • 纯净[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "https://api.wsyzy.net/api.php/provide/vod/?ac=list"},
     {"key": "红牛资源","name": "影视 • 红牛[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "https://www.hongniuzy2.com/api.php/provide/vod/"},
 
-    {"key": "量子","name": "影视 • 量子[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "https://cj.lziapi.com/api.php/provide/vod/"},
-    {"key": "非凡","name": "影视 • 非凡[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "http://ffzy.tv/api.php/provide/vod/"},
-    {"key": "极速资源","name": "影视 • 极速[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "https://jszyapi.com/api.php/provide/vod/?ac=list"},
-    {"key": "百度","name": "百度[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "https://api.apibdzy.com/api.php/provide/vod?ac=list"},
+    // {"key": "量子","name": "影视 • 量子[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "https://cj.lziapi.com/api.php/provide/vod/"},
+    // {"key": "非凡","name": "影视 • 非凡[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "http://ffzy.tv/api.php/provide/vod/"},
+    // {"key": "极速资源","name": "影视 • 极速[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "https://jszyapi.com/api.php/provide/vod/?ac=list"},
+    // {"key": "百度","name": "百度[直连]","type": 1,"searchable": 1,"quickSearch": 1,"filterable": 1,"api": "https://api.apibdzy.com/api.php/provide/vod?ac=list"},
    
 
     
