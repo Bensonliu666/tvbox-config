@@ -45,7 +45,6 @@
     {"key": "原创","name": "☀原创┃不卡","type": 3,"api": "csp_YCyzGuard","searchable": 1,"quickSearch": 1,"changeable": 1,"playerType": 1,"timeout": 10,"jar": "./jar/fan.txt"},
     {"key": "糯米","name": "🍓糯米┃秒播","type": 3,"api": "csp_NmyswvGuard","searchable": 1,"quickSearch": 1,"changeable": 1,"timeout": 10,"jar": "./jar/fan.txt"},
     {"key": "文采","name": "💮文采┃秒播","type": 3,"api": "csp_JpysGuard","searchable": 1,"quickSearch": 1,"changeable": 1,"playerType": 2,"timeout": 10,"jar": "./jar/fan.txt"},
-    {"key": "Lib","name": "🌟立播┃秒播","type": 3,"api": "csp_LibvioGuard","searchable": 1,"quickSearch": 1,"changeable": 1,"timeout": 10,"ext": {"Cloud-drive": "tvfan/Cloud-drive.txt","from": "4k|auto"},"jar": "./jar/fan.txt"},
     {"key": "厂长","name": "📔厂长┃不卡","type": 3,"api": "csp_NewCzGuard","searchable": 1,"quickSearch": 1,"changeable": 1,"playerType": 2,"timeout": 10,"jar": "./jar/fan.txt"},
     {"key": "比特","name": "🍄比特┃手机","type": 3,"api": "csp_BttwooGuard","searchable": 1,"quickSearch": 1,"changeable": 1,"timeout": 10,"jar": "./jar/fan.txt"},
     {"key": "热播","name": "📺热播┃多线","type": 3,"api": "csp_AppTTGuard","searchable": 1,"quickSearch": 1,"changeable": 1,"playerType": 2,"timeout": 10,"ext": "uqGL1bNENExT7/hGxpSE5qU=","jar": "./jar/fan.txt"},
