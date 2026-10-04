@@ -1,7 +1,7 @@
 var rule = {
     title: '优酷',
     host: 'https://www.%79%6f%75%6b%75.com',
-    homeUrl: '',
+    homeUrl: 'https://www.youku.com/category/data?optionRefresh=1&pageNo=1&params=%7B%22type%22%3A%22%E7%94%B5%E5%BD%B1%22%7D',
     searchUrl: 'https://search.%79%6f%75%6b%75.com/api/search?pg=fypage&keyword=**',
     searchable: 2,
     quickSearch: 0,
@@ -2374,6 +2374,7 @@ var rule = {
             };
         }
     }),
+    推荐: 'js:let d=[];let fl={"type":"电影"};let input="https://www.youku.com/category/data?optionRefresh=1&pageNo=1&params="+encodeUrl(stringify(fl));let html=JSON.parse(fetch(input,fetch_params));let lists=html.data.filterData.listData;lists.forEach(function(it){let vid;if(it.rightTagColor==="BLUE"&&it.videoLink.includes("groupId=")){let groupIdMatch=it.videoLink.match(/groupId=([^&]+)/);vid=groupIdMatch&&groupIdMatch[1]?groupIdMatch[1]:"msearch:"}else if(it.videoLink.includes("id_")){vid=it.videoLink.split("id_")[1].split(".html")[0]}else{vid="msearch:"}d.push({title:it.title,img:it.img,desc:it.summary,url:"https://search.youku.com/api/search?appScene=show_episode&showIds="+vid,content:it.subTitle})});setResult(d);',
     一级: $js.toString(() => {
         let d = [];
         MY_FL.type = MY_CATE;

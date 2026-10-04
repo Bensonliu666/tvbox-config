@@ -1,7 +1,8 @@
 var rule = {
     title: '菜狗',
     host: 'https://waptv.sogou.com',
-    homeUrl: '',
+    homeUrl: 'https://waptv.sogou.com/napi/video/classlist?abtest=0&iploc=CN1304&spver=&listTab=teleplay&filter=&start=0&len=15&fr=filter',
+    推荐: '*',
     searchUrl: '/film/result?ie=utf8&query=**',
     searchable: 2,
     quickSearch: 0,

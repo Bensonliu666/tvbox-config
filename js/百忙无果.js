@@ -2,7 +2,8 @@
 var rule = {
     title: '百忙无果[官]',
     host: 'https://pianku.api.mgtv.com',
-    homeUrl: '',
+    homeUrl: 'https://pianku.api.mgtv.com/rider/list/pcweb/v3?platform=pcweb&channelId=2&pn=1&pc=80&hudong=1&_support=10000000&kind=a1&area=a1',
+    推荐: '*',
     searchUrl: 'https://mobileso.bz.mgtv.com/msite/search/v2?q=**&pn=fypage&pc=10',
     detailUrl: 'https://pcweb.api.mgtv.com/episode/list?page=1&size=50&video_id=fyid',
     searchable: 2,
