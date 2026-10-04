@@ -32,7 +32,7 @@
     {"key": "drpy_js_播客","name": "聚合 • 播客","type": 3,"api": "./lib/drpy2.min.js","ext": "./js/播客.js"},
     {"key": "drpy_js_酷6网","name": "聚合 • 酷6网","type": 3,"api": "./lib/drpy2.min.js","changeable": 0,"ext": "./js/酷6网.js"},
     {"key": "drpy_js_电影港","name": "电影港[js]","type": 3,"api": "./lib/drpy2.min.js","searchable": 1,"quickSearch": 1,"changeable": 1,"playerType": 1,"timeout": 30,"ext": "./js/dygang.js"},
-    {"key": "drpy_js_xb","name": "新版[js]","type": 3,"api": "./lib/drpy2.min.js","searchable": 1,"quickSearch": 1,"changeable": 1,"playerType": 1,"timeout": 30,"ext": "./js/xb.js"},
+    {"key": "drpy_js_xb6v","name": "新版6v[js]","type": 3,"api": "./lib/drpy2.min.js","searchable": 1,"quickSearch": 1,"changeable": 1,"playerType": 1,"timeout": 30,"ext": "./js/xb6v.js"},
     {"key": "cupfox_in","name": "茶杯狐 • cupfox.in","type": 3,"api": "./lib/drpy2.min.js","searchable": 1,"quickSearch": 1,"changeable": 1,"filterable": 0,"header": {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"},"ext": "./js/茶杯狐.js"},
     {"key": "新闪雷","name": "新闪雷 • MP4","type": 3,"api": "./lib/drpy2.min.js","header": {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"},"ext": "./js/新闪雷.js"},
     {"key": "闪雷","name": "闪雷 • MP4","type": 3,"api": "./lib/drpy2.min.js","header": {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"},"ext": "./js/678.js"},
