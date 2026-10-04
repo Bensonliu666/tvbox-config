@@ -83,17 +83,20 @@
         {
             "name": "GGTV",
             "type": 0,
-            "url": "https://play.fuqizhishi.com/gang0818/API.php?appkey=QQ172598364&url="
+            "url": "https://play.fuqizhishi.com/gang0818/API.php?appkey=QQ172598364&url=",
+            "ext": {"header": {"User-Agent": "Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36", "referer": "https://play.fuqizhishi.com/"}}
         },
         {
             "name": "夫妻",
             "type": 0,
-            "url": "https://play.fuqizhishi.com/maotv/API.php?appkey=xiongdimenbieguaiwodingbuzhulegailekey07201538&url="
+            "url": "https://play.fuqizhishi.com/maotv/API.php?appkey=xiongdimenbieguaiwodingbuzhulegailekey07201538&url=",
+            "ext": {"header": {"User-Agent": "Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36", "referer": "https://play.fuqizhishi.com/"}}
         },
         {
             "name": "刚佬",
             "type": 0,
-            "url": "https://play.fuqizhishi.com/jx2/API.php?appkey=iiiixiaobai&url="
+            "url": "https://play.fuqizhishi.com/jx2/API.php?appkey=iiiixiaobai&url=",
+            "ext": {"header": {"User-Agent": "Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36", "referer": "https://play.fuqizhishi.com/"}}
         },
         {
             "name": "夜幕",
