@@ -4,20 +4,43 @@
   "lives": [
     {"name": "综合直播","type": 0,"url": "./all.txt"}
   ],
-  "parses": [
-    {"name": "Json聚合","type": 3,"url": "Demo"},
-    {"name": "羽路均沾","type": 0,"url": "https://ylu.cc/index.php?url="},
-    {"name": "无尽","type": 0,"url": "https://jx.wujinkk.com/dplayer/?url=","ext": {"header": {"User-Agent": "Mozilla/5.0"}}},
-    {"name": "m3u8","type": 0,"url": "https://jx.m3u8.tv/jiexi/?url="},
-    {"name": "咸鱼","type": 0,"url": "https://jx.xymp4.cc/?url=","ext": {"header": {"user-agent": "Mozilla/5.0(Linux;Android13;V2049ABuild/TP1A.220624.014;wv)AppleWebKit/537.36(KHTML,likeGecko)Version/4.0Chrome/116.0.0.0MobileSafari/537.36","referer": "https://www.xyflv.cc/"}}},
-    {"name": "虾米","type": 0,"url": "https://jx.xmflv.com/?url=","ext": {"header": {"user-agent": "Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"}}},
-    {"name": "云解","type": 0,"url": "https://yparse.ik9.cc/index.php?url=","ext": {"header": {"user-agent": "Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"}}},
-    {"name": "冰豆","type": 0,"url": "https://bd.jx.cn/?url=","ext": {"header": {"user-agent": "Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"}}},
-    {"name": "七七","type": 0,"url": "https://jx.77flv.cc/?url=","ext": {"header": {"user-agent": "Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"}}},
-    {"name": "盘古","type": 0,"url": "https://www.playm3u8.cn/jiexi.php?url=","ext": {"header": {"user-agent": "Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"}}},
-    {"name": "夜幕","type": 0,"url": "https://yemu.xyz/?url=","ext": {"header": {"user-agent": "Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"}}},
-    {"name": "爱豆","type": 0,"url": "https://jx.aidouer.net/?url=","ext": {"header": {"user-agent": "Mozilla/5.0(Linux;Android13;V2049ABuild/TP1A.220624.014;wv)AppleWebKit/537.36(KHTML,likeGecko)Version/4.0Chrome/116.0.0.0MobileSafari/537.36","referer": "https://jiejie.uk/"}}}
-  ],
+  "parses":     [
+        {
+            "name": "Json聚合",
+            "type": 3,
+            "url": "Demo"
+        },
+        {
+            "name": "GGTV",
+            "type": 0,
+            "url": "https://play.fuqizhishi.com/gang0818/API.php?appkey=QQ172598364&url="
+        },
+        {
+            "name": "夫妻",
+            "type": 0,
+            "url": "https://play.fuqizhishi.com/maotv/API.php?appkey=xiongdimenbieguaiwodingbuzhulegailekey07201538&url="
+        },
+        {
+            "name": "刚佬",
+            "type": 0,
+            "url": "https://play.fuqizhishi.com/jx2/API.php?appkey=iiiixiaobai&url="
+        },
+        {
+            "name": "夜幕",
+            "type": 0,
+            "url": "https://www.yemu.xyz/?url="
+        },
+        {
+            "name": "盘古",
+            "type": 0,
+            "url": "https://www.pangujiexi.com/pangu/?url="
+        },
+        {
+            "name": "8090",
+            "type": 0,
+            "url": "https://www.8090g.cn/?url="
+        }
+    ],
   "hosts": [],
   "sites": [
     {"key": "drpy_js_豆瓣","name": "搜索 • 豆瓣","type": 3,"api": "./lib/drpy2.min.js","searchable": 1,"quickSearch": 0,"changeable": 0,"ext": "./js/drpy.js"},
