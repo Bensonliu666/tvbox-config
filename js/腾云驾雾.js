@@ -2,13 +2,13 @@
 var rule = {
     title: '腾讯视频',
     host: 'https://v.qq.com',
-    homeUrl: '/x/bu/pagesheet/list?_all=1&append=1&channel=cartoon&listpage=1&offset=0&pagesize=21&iarea=-1&sort=18',
+    homeUrl: 'https://v.qq.com/channel/choice',
     detailUrl: 'https://node.video.qq.com/x/api/float_vinfo2?cid=fyid',
     searchUrl: '**',
     searchable: 2,
     filterable: 1,
     multi: 1,
-    url: '/x/bu/pagesheet/list?_all=1&append=1&channel=fyclass&listpage=1&offset=((fypage-1)*21)&pagesize=21&iarea=-1',
+    url: 'https://v.qq.com/channel/fyclass',
     filter_url: 'sort={{fl.sort or 75}}&iyear={{fl.iyear}}&year={{fl.year}}&itype={{fl.type}}&ifeature={{fl.feature}}&iarea={{fl.area}}&itrailer={{fl.itrailer}}&gender={{fl.sex}}&prefer={{fl.prefer}}&identity={{fl.identity}}&attraction={{fl.attraction}}&story={{fl.story}}',
     filter: {
         "choice": [{
@@ -749,7 +749,7 @@ var rule = {
         }
     }),
 
-    推荐: '.list_item;img&&alt;img&&src;a&&Text;a&&data-float',
+    推荐: 'js:let d=[];function collectVids(cards){function walk(o){if(!o||typeof o!=="object"){return}if(Array.isArray(o)){o.forEach(walk);return}if(o.type==="pc_card_ad"||o.type==="pc_hot_filter"){return}if(o.cid){let title="";let img="";let pstr=o.poster||o.coverPic||"";if(typeof pstr==="string"&&pstr.trim().startsWith("{")){try{let pj=JSON.parse(pstr);title=o.title||pj.title||"";img=pj.image_url||pj.img||""}catch(e){}}else{title=o.title||"";img=o.coverPic||o.smallCoverPic||o.poster||o.image_url||""}if(title){d.push({title:title,img:img,desc:String(o.desc||o.focus||""),url:o.cid})}return}Object.keys(o).forEach(function(k){walk(o[k])})}walk(cards)}let pageId="100101";let rid="";for(let i=0;i<4;i++){rid+=(i?"-":"")+Math.random().toString(36).substring(2,10)}let reqBody={"page_params":{"page_type":"channel","page_id":pageId,"scene":"channel","new_mark_label_enabled":"1","vl_to_mvl":"","ad_exp_ids":"100000","ams_cookies":"","ad_trans_data":JSON.stringify({"ad_request_id":rid,"game_sessions":[]}),"skip_privacy_types":"0","support_click_scan":"1"},"page_bypass_params":{"params":{"platform_id":"2","caller_id":"3000010","data_mode":"default","user_mode":"default","specified_strategy":"","page_type":"channel","page_id":pageId,"scene":"channel","new_mark_label_enabled":"1"},"scene":"channel","app_version":"","abtest_bypass_id":""},"page_context":null};try{let html=request("https://pbaccess.video.qq.com/trpc.vector_layout.page_view.PageService/getPage?video_appid=3000010&vversion_platform=2",{body:JSON.stringify(reqBody),headers:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36","Content-Type":"application/json","Origin":"https://v.qq.com","Referer":"https://v.qq.com/channel/choice"},method:"POST"});let json=JSON.parse(html);if(json.data&&json.data.CardList){collectVids(json.data.CardList)}}catch(e){log("首页getPage失败:"+e.message)}if(d.length===0){try{let html2=request(input);let m=html2.match(/focusList:\[(.*?)\]/);if(m){let arr=m[1].split(/},\{/);arr.forEach(function(it){let cid=it.match(/cid:"([^"]+)"/);let title=it.match(/title:"([^"]+)"/);let pic=it.match(/coverPic:"([^"]+)"/);if(cid&&title){d.push({title:title[1],img:pic?pic[1]:"",desc:"",url:cid[1]})}})}}catch(e){log("首页SSR兜底失败:"+e.message)}}setResult(d);',
     一级: $js.toString(() => {
         let d = [];
         let fyclass = MY_CATE;
@@ -906,23 +906,54 @@ var rule = {
 
             setResult(d);
         } else {
-            // 其他分类使用原有的HTML解析逻辑
-            let html = fetch(input, fetch_params);
-            let $ = pdfa(html, '.list_item');
-            $.forEach(function(it) {
-                let item = pdfh(it, 'a&&data-float');
-                let title = pdfh(it, 'img&&alt');
-                let img = pdfh(it, 'img&&src');
-                let desc = pdfh(it, 'a&&Text');
-                if (item && title) {
-                    d.push({
-                        title: title,
-                        img: img,
-                        desc: desc,
-                        url: item
-                    });
+            // 其他分类：getPage 新接口（主通道）+ 频道页SSR兜底
+            function collectVids(cards) {
+                function walk(o) {
+                    if (!o || typeof o !== 'object') { return }
+                    if (Array.isArray(o)) { o.forEach(walk); return }
+                    if (o.type === 'pc_card_ad' || o.type === 'pc_hot_filter') { return }
+                    if (o.cid) {
+                        let title = '';
+                        let img = '';
+                        let pstr = o.poster || o.coverPic || '';
+                        if (typeof pstr === 'string' && pstr.trim().startsWith('{')) {
+                            try { let pj = JSON.parse(pstr); title = o.title || pj.title || ''; img = pj.image_url || pj.img || '' } catch (e) {}
+                        } else { title = o.title || ''; img = o.coverPic || o.smallCoverPic || o.poster || o.image_url || '' }
+                        if (title) { d.push({ title: title, img: img, desc: String(o.desc || o.focus || ''), url: o.cid }) }
+                        return;
+                    }
+                    Object.keys(o).forEach(function(k) { walk(o[k]) });
                 }
-            });
+                walk(cards);
+            }
+            let pageId = { 'movie': '100173', 'tv': '100113', 'variety': '100109', 'cartoon': '100119', 'child': '100150', 'doco': '100105' }[fyclass] || '100173';
+            let rid = '';
+            for (let i = 0; i < 4; i++) { rid += (i ? '-' : '') + Math.random().toString(36).substring(2, 10) }
+            let reqBody = { "page_params": { "page_type": "channel", "page_id": pageId, "scene": "channel", "new_mark_label_enabled": "1", "vl_to_mvl": "", "ad_exp_ids": "100000", "ams_cookies": "", "ad_trans_data": JSON.stringify({ "ad_request_id": rid, "game_sessions": [] }), "skip_privacy_types": "0", "support_click_scan": "1" }, "page_bypass_params": { "params": { "platform_id": "2", "caller_id": "3000010", "data_mode": "default", "user_mode": "default", "specified_strategy": "", "page_type": "channel", "page_id": pageId, "scene": "channel", "new_mark_label_enabled": "1" }, "scene": "channel", "app_version": "", "abtest_bypass_id": "" }, "page_context": null };
+            try {
+                let html = request('https://pbaccess.video.qq.com/trpc.vector_layout.page_view.PageService/getPage?video_appid=3000010&vversion_platform=2', {
+                    body: JSON.stringify(reqBody),
+                    headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36', 'Content-Type': 'application/json', 'Origin': 'https://v.qq.com', 'Referer': 'https://v.qq.com/channel/' + fyclass },
+                    method: 'POST'
+                });
+                let json = JSON.parse(html);
+                if (json.data && json.data.CardList) { collectVids(json.data.CardList) }
+            } catch (e) { log('分类getPage请求失败: ' + e.message) }
+            if (d.length === 0) {
+                try {
+                    let html2 = fetch(input, fetch_params);
+                    let m = html2.match(/focusList:\[(.*?)\]/);
+                    if (m) {
+                        let arr = m[1].split(/},\{/);
+                        arr.forEach(function(it) {
+                            let cid = it.match(/cid:"([^"]+)"/);
+                            let title = it.match(/title:"([^"]+)"/);
+                            let pic = it.match(/coverPic:"([^"]+)"/);
+                            if (cid && title) { d.push({ title: title[1], img: pic ? pic[1] : '', desc: '', url: cid[1] }) }
+                        });
+                    }
+                } catch (e) { log('分类SSR兜底失败: ' + e.message) }
+            }
             setResult(d);
         }
     }),
