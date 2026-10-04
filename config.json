@@ -11,6 +11,76 @@
             "url": "Demo"
         },
         {
+            "name": "json一[4K]",
+            "type": 1,
+            "url": "http://119.91.123.253:2345/Api/yun.php?url="
+        },
+        {
+            "name": "json四[摸桑]",
+            "type": 1,
+            "url": "https://vip.mosangkeji.com:443/api/?key=q7mSY5L8ssbm1J3Eai&url="
+        },
+        {
+            "name": "json五[4K]",
+            "type": 1,
+            "url": "http://110.42.2.247:880/analysis/json/?uid=2148&my=ehmqrtuCEJNQTVX047&format=json&url="
+        },
+        {
+            "name": "青风[赛文]",
+            "type": 1,
+            "url": "http://xiutan.shiyifacai.com/json/qingfeng.php?url="
+        },
+        {
+            "name": "qiyi官源[肥猫]",
+            "type": 1,
+            "url": "http://39.104.230.177:1122/lxjx/myyk.php?url="
+        },
+        {
+            "name": "肥猫最可爱",
+            "type": 1,
+            "url": "http://xn--ihqu10cn4c.xn--z7x900a.live/jx.php?id=2&url="
+        },
+        {
+            "name": "王二小王",
+            "type": 1,
+            "url": "http://122.228.84.103:7777/api/?key=4Dk5tdayvY6NZufEMG&url="
+        },
+        {
+            "name": "王二小二",
+            "type": 1,
+            "url": "http://110.42.7.182:880/api/?key=7e84f07dc78fbb3406d64a1ab7d966b3&url="
+        },
+        {
+            "name": "王二小小",
+            "type": 1,
+            "url": "http://43.136.176.188:91/api/?key=4ef232e96172b0bda78d393c695fe7c4&url="
+        },
+        {
+            "name": "讴歌",
+            "type": 1,
+            "url": "https://by1.nxog.eu.org/jx.php?ou=33c&mz=0&url="
+        },
+        {
+            "name": "巧记帅",
+            "type": 1,
+            "url": "http://pan.qiaoji8.com/tvbox/neibu.php?url="
+        },
+        {
+            "name": "杰森嗅探",
+            "type": 0,
+            "url": "https://jx.jsonplayer.com/player/?url="
+        },
+        {
+            "name": "7777嗅探",
+            "type": 0,
+            "url": "https://jx.777jiexi.com/player/?url="
+        },
+        {
+            "name": "vip嗅探",
+            "type": 0,
+            "url": "https://vip.lianfaka.com/vip/?url="
+        },
+        {
             "name": "GGTV",
             "type": 0,
             "url": "https://play.fuqizhishi.com/gang0818/API.php?appkey=QQ172598364&url="
