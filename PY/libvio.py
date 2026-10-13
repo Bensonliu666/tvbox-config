@@ -42,9 +42,16 @@ class Spider(Spider):
             i += 1
         return None
 
-    def _crack(self):
-        """解 CDN PoW 挑战"""
+    def _crack(self, force=False):
+        """解 CDN PoW 挑战。force=True 时强制重新求解"""
         try:
+            if not force:
+                r = self.session.get(self.host + '/', timeout=self.timeout, verify=False)
+                if '正在验证' not in r.text and 'cdn_pow' not in r.text:
+                    self._cracked = True
+                    return
+            # 强制解：先清旧 cookie，再请求首页拿挑战参数
+            self.session.cookies.clear()
             r = self.session.get(self.host + '/', timeout=self.timeout, verify=False)
             if '正在验证' not in r.text and 'cdn_pow' not in r.text:
                 self._cracked = True
@@ -70,9 +77,9 @@ class Spider(Spider):
             try:
                 resp = self.session.get(url, timeout=self.timeout, verify=False)
                 resp.encoding = 'utf-8'
-                # 被 PoW 拦截，重新解
+                # 被 PoW 拦截，强制重新求解
                 if '正在验证' in resp.text or 'cdn_pow' in resp.text:
-                    self._crack()
+                    self._crack(force=True)
                     if self._cracked:
                         resp = self.session.get(url, timeout=self.timeout, verify=False)
                         resp.encoding = 'utf-8'
