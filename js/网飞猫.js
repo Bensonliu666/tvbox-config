@@ -1,4 +1,4 @@
-// 网飞猫 drpy2 源 v9 - 标准选择器格式 + 推荐字段
+// 网飞猫 drpy2 源 v10 - 推荐用 js: 格式，自己请求
 var rule = {
     title: '网飞猫',
     host: 'https://www.ncat25.com',
@@ -17,7 +17,7 @@ var rule = {
     filterable: 0,
     play_parse: true,
     limit: 30,
-    推荐: 'div.module-item;div.v-item-title&&Text;img&&data-original;div.v-item-bottom span&&Text;a&&href',
+    推荐: 'js:var html=request("https://www.ncat25.com/");var d=[];var re=/<div class="module-item">[\\s\\S]*?<a href="\\/detail\\/(\\d+)\\.html"[^>]*>[\\s\\S]*?<div class="v-item-bottom">\\s*<span>\\s*([^<]*?)\\s*<\\/span>[\\s\\S]*?<div class="v-item-title">([^<]*)<\\/div>/g;var m;while((m=re.exec(html))!==null){var vid=m[1],remarks=m[2].trim(),name=m[3].trim();var pm=m[0].match(/data-original="([^"]+)"/);var pic=pm?pm[1]:"";if(pic&&pic.indexOf("logo_placeholder")<0&&pic.indexOf("vod_pc_static")<0){if(pic.charAt(0)==="/")pic="https://www.ncat25.com"+pic;}else{pic="";}d.push({vod_id:vid,vod_name:name,vod_pic:pic,vod_remarks:remarks});}setResult(d);',
     一级: 'div.module-item;div.v-item-title&&Text;img&&data-original;div.v-item-bottom span&&Text;a&&href',
     二级: {
         title: 'div.detail-title strong&&Text',
