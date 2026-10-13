@@ -211,6 +211,8 @@
 {"key":"115Share","name":"115云盘分享","type":3,"api":"csp_P115Share","searchable":1,"quickSearch":0,"changeable":0,"filterable":0,"timeout":60,"ext":"./lib/token.json$$$./json/115share.txt$$$db$$$1"},
 {"key":"UCShare","name":"UC云盘分享","type":3,"api":"csp_UCShare","searchable":1,"quickSearch":0,"changeable":0,"filterable":0,"timeout":60,"ext":"./lib/token.json$$$./json/ucshare.txt$$$db$$$1"},
 {"key":"SambaShare","name":"Samba分享","type":3,"api":"csp_SambaShare","searchable":0,"quickSearch":0,"changeable":0,"filterable":0,"timeout":60,"ext":"./lib/token.json$$$./json/sambashare.txt"},
+
+
 {"key":"阿里云盘","name":"阿里•云盘","type":3,"api":"csp_PanAli","searchable":0,"changeable":0,"filterable":0},
 {"key":"夸克网盘","name":"夸克•网盘","type":3,"api":"csp_PanQuark","searchable":0,"changeable":0,"filterable":0},
 {"key":"UC网盘","name":"UC•网盘","type":3,"api":"csp_PanUC","searchable":0,"changeable":0,"filterable":0},
