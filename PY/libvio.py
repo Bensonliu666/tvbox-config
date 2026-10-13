@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
 # by @Qist
 """
-LibVio (libvio.run) - 免费在线观影
+LibVio (libvio.host) - 免费在线观影
+更新: 支持 CDN PoW (SHA-256 工作量证明) 反爬
 """
 import re
 import json
+import time
+import hashlib
 import requests
 from urllib.parse import quote
 from base.spider import Spider
@@ -20,19 +23,61 @@ class Spider(Spider):
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
             'Referer': self.host + '/',
             'Origin': self.host,
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+            'Accept-Language': 'zh-CN,zh;q=0.9',
         }
         self.timeout = 20
         self.session = requests.Session()
         self.session.headers.update(self.header)
+        self._cracked = False
+        self._crack()
+
+    def _solve_pow(self, sig, diff):
+        """找 nonce 使 sha256(sig+nonce) 以 diff 开头"""
+        i = 0
+        max_iter = 65536 * 32
+        while i < max_iter:
+            if hashlib.sha256((sig + str(i)).encode()).hexdigest().startswith(diff):
+                return i
+            i += 1
+        return None
+
+    def _crack(self):
+        """解 CDN PoW 挑战"""
+        try:
+            r = self.session.get(self.host + '/', timeout=self.timeout, verify=False)
+            if '正在验证' not in r.text and 'cdn_pow' not in r.text:
+                self._cracked = True
+                return
+            m_ts = re.search(r'var TS\s*=\s*"(\d+)"', r.text)
+            m_sig = re.search(r'var SIG\s*=\s*"([0-9a-f]+)"', r.text)
+            m_diff = re.search(r'var DIFF\s*=\s*"([0-9a-f]+)"', r.text)
+            if not (m_ts and m_sig and m_diff):
+                return
+            ts, sig, diff = m_ts.group(1), m_sig.group(1), m_diff.group(1)
+            nonce = self._solve_pow(sig, diff)
+            if nonce is None:
+                return
+            domain = self.host.split('//')[1].split('/')[0]
+            self.session.cookies.set('__cdn_pow', f'{ts}_auto_{nonce}_{sig}', domain=domain)
+            r2 = self.session.get(self.host + '/', timeout=self.timeout, verify=False)
+            self._cracked = '正在验证' not in r2.text
+        except Exception:
+            pass
 
     def _safe_get(self, url, max_retries=3):
         for attempt in range(max_retries):
             try:
                 resp = self.session.get(url, timeout=self.timeout, verify=False)
                 resp.encoding = 'utf-8'
+                # 被 PoW 拦截，重新解
+                if '正在验证' in resp.text or 'cdn_pow' in resp.text:
+                    self._crack()
+                    if self._cracked:
+                        resp = self.session.get(url, timeout=self.timeout, verify=False)
+                        resp.encoding = 'utf-8'
                 return resp
             except:
-                import time
                 time.sleep(1)
         return None
 
