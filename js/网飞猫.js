@@ -1,33 +1,50 @@
-// ============ 网飞猫（ncat25）drpy2 源 ============
-// cdndefend SHA1 反爬自动求解；免登录，匿名可看
+// ============ 网飞猫（ncat25）drpy2 源 v3 ============
+// 文件加载时先解 cdndefend 挑战，cookie 写入 headers
 var HOST = 'https://www.ncat25.com';
 var UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36';
 var _ck = '';
 var _token = '';
 
-function _solve() {
-    if (_ck) return _ck;
-    try {
-        var html = request(HOST + '/');
-        var m = html.match(/a0_0x2a54=\['([0-9A-F]{40})'/);
-        if (!m) { _ck = 'ok'; return _ck; }
-        var h = m[1];
-        var n1 = parseInt(h[0], 16);
-        for (var i = 0; i < 20000000; i++) {
-            var wa = CryptoJS.SHA1(h + i);
-            var b1 = (wa.words[n1 >> 2] >>> (24 - (n1 % 4) * 8)) & 0xff;
-            var b2 = (wa.words[(n1 + 1) >> 2] >>> (24 - ((n1 + 1) % 4) * 8)) & 0xff;
-            if (b1 === 0xb0 && b2 === 0x0b) { _ck = h + i; break; }
+// 文件加载时立即解挑战
+try {
+    var _html0 = request(HOST + '/');
+    var _m0 = _html0.match(/a0_0x2a54=\['([0-9A-F]{40})'/);
+    if (_m0) {
+        var _h = _m0[1];
+        var _n1 = parseInt(_h[0], 16);
+        for (var _i = 0; _i < 20000000; _i++) {
+            var _wa = CryptoJS.SHA1(_h + _i);
+            var _b1 = (_wa.words[_n1 >> 2] >>> (24 - (_n1 % 4) * 8)) & 0xff;
+            var _b2 = (_wa.words[(_n1 + 1) >> 2] >>> (24 - ((_n1 + 1) % 4) * 8)) & 0xff;
+            if (_b1 === 0xb0 && _b2 === 0x0b) { _ck = _h + _i; break; }
         }
-        var tm = html.match(/name="t" value="([^"]+)"/);
-        if (tm) _token = tm[1];
-    } catch (e) {}
-    return _ck;
-}
+        var _tm = _html0.match(/name="t" value="([^"]+)"/);
+        if (_tm) _token = _tm[1];
+    } else {
+        _ck = 'ok';
+    }
+} catch (e) {}
 
-function _get(url) {
-    _solve();
-    return request(url);
+function _parseList(html) {
+    var d = [];
+    var re = /<div class="module-item">\s*<a href="\/detail\/(\d+)\.html"[^>]*>[\s\S]*?<div class="v-item-bottom">\s*<span>\s*([^<]*?)\s*<\/span>[\s\S]*?<div class="v-item-title">([^<]*)<\/div>/g;
+    var m;
+    while ((m = re.exec(html)) !== null) {
+        var vid = m[1], remarks = m[2].trim(), name = m[3].trim();
+        var pm = m[0].match(/data-original="([^"]+)"/);
+        var pic = pm ? pm[1] : '';
+        if (pic && pic.indexOf('logo_placeholder') < 0 && pic.indexOf('vod_pc_static') < 0) {
+            if (pic.charAt(0) === '/') pic = HOST + pic;
+        } else { pic = ''; }
+        d.push({ vod_id: vid, vod_name: name, vod_pic: pic, vod_remarks: remarks });
+    }
+    if (d.length === 0) {
+        var re2 = /<a href="\/detail\/(\d+)\.html" class="search-result-item">[\s\S]*?<img[^>]+data-original="([^"]+)"[^>]*>[\s\S]*?alt="([^"]*)"/g;
+        while ((m = re2.exec(html)) !== null) {
+            d.push({ vod_id: m[1], vod_name: m[3], vod_pic: m[2], vod_remarks: '' });
+        }
+    }
+    return d;
 }
 
 var rule = {
@@ -35,7 +52,8 @@ var rule = {
     host: HOST,
     headers: {
         'User-Agent': UA,
-        'Referer': HOST + '/'
+        'Referer': HOST + '/',
+        'Cookie': 'cdndefend_js_cookie=' + _ck
     },
     class_name: '电影&连续剧&动漫&综艺纪录&短剧',
     class_url: '1&2&3&4&6',
@@ -49,43 +67,22 @@ var rule = {
     limit: 30,
 
     一级: $js.toString(() => {
-        _solve();
-        fetch_params.headers['Cookie'] = 'cdndefend_js_cookie=' + _ck;
-        // 搜索请求：补 t token
-        if (input.indexOf('/search?') >= 0) {
-            if (!_token) {
-                var h0 = request(HOST + '/');
-                var tm = h0.match(/name="t" value="([^"]+)"/);
-                if (tm) _token = tm[1];
-            }
-            input = input.replace(/&t=.*$/, '&t=' + _token);
+        // input 是引擎请求后返回的 HTML（已带 cookie，应是真实页面）
+        var html = input;
+        // 如果还是挑战页，fallback 重新请求
+        if (html && (html.indexOf('a0_0x2a54') >= 0 || html.indexOf('cdndefend') >= 0)) {
+            fetch_params.headers['Cookie'] = 'cdndefend_js_cookie=' + _ck;
+            html = request(HOST + '/');
         }
-        var html = request(input);
-        var d = [];
-        var re = /<div class="module-item">\s*<a href="\/detail\/(\d+)\.html"[^>]*>[\s\S]*?<div class="v-item-bottom">\s*<span>\s*([^<]*?)\s*<\/span>[\s\S]*?<div class="v-item-title">([^<]*)<\/div>/g;
-        var m;
-        while ((m = re.exec(html)) !== null) {
-            var vid = m[1], remarks = m[2].trim(), name = m[3].trim();
-            var pm = m[0].match(/data-original="([^"]+)"/);
-            var pic = pm ? pm[1] : '';
-            if (pic && pic.indexOf('logo_placeholder') < 0 && pic.indexOf('vod_pc_static') < 0) {
-                if (pic.charAt(0) === '/') pic = HOST + pic;
-            } else { pic = ''; }
-            d.push({ vod_id: vid, vod_name: name, vod_pic: pic, vod_remarks: remarks });
-        }
-        if (d.length === 0) {
-            var re2 = /<a href="\/detail\/(\d+)\.html" class="search-result-item">[\s\S]*?<img[^>]+data-original="([^"]+)"[^>]*>[\s\S]*?alt="([^"]*)"/g;
-            while ((m = re2.exec(html)) !== null) {
-                d.push({ vod_id: m[1], vod_name: m[3], vod_pic: m[2], vod_remarks: '' });
-            }
-        }
+        var d = _parseList(html);
         setResult(d);
     }),
 
     二级: $js.toString(() => {
-        _solve();
+        var url = input;
+        if (url && url.charAt(0) === '/') url = HOST + url;
         fetch_params.headers['Cookie'] = 'cdndefend_js_cookie=' + _ck;
-        var html = request(input);
+        var html = request(url);
 
         var name = '';
         var dm = html.match(/class="detail-title[^"]*"[^>]*>([\s\S]*?)<\/div>/);
@@ -131,7 +128,7 @@ var rule = {
         }
 
         VOD = {
-            vod_id: input.match(/\/detail\/(\d+)/) ? input.match(/\/detail\/(\d+)/)[1] : '',
+            vod_id: url.match(/\/detail\/(\d+)/) ? url.match(/\/detail\/(\d+)/)[1] : '',
             vod_name: name,
             vod_pic: pic,
             vod_remarks: info['备注'] || '',
@@ -145,14 +142,16 @@ var rule = {
     }),
 
     lazy: $js.toString(() => {
-        _solve();
+        fetch_params.headers['Cookie'] = 'cdndefend_js_cookie=' + _ck;
         var h = { 'User-Agent': UA, 'Referer': HOST + '/' };
-        var html = request(input);
+        var url = input;
+        if (url && url.charAt(0) === '/') url = HOST + url;
+        var html = request(url);
         var m = html.match(/playSource\s*=\s*\{\s*src:\s*"([^"]+)"/);
         if (m && m[1].indexOf('http') === 0) {
             input = { parse: 0, url: m[1], header: h };
         } else {
-            input = { parse: 1, url: input, header: h };
+            input = { parse: 1, url: url, header: h };
         }
     })
 };
