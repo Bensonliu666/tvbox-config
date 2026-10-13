@@ -137,7 +137,6 @@
 
 {"key":"bili_di","name":"🅱️┃哔哩┃直连","type":3,"api":"./lib/drpy2.min.js","searchable":1,"quickSearch":1,"changeable":0,"filterable":0,"ext":"./js/bili_drpy.js"},
 {"key":"csp_Bili","name":"🅱️┃哔哩┃","type":3,"api":"./lib/drpy2.min.js","searchable":1,"quickSearch":1,"changeable":0,"filterable":1,"ext":"./js/bili_zonghe.js"},
-{"key":"bili_v3","name":"🅱️┃哔哩┃综合V3","type":3,"api":"./lib/drpy2.min.js","searchable":1,"quickSearch":1,"changeable":0,"filterable":1,"ext":"./js/bili_v3.js"},
 {"key":"哔哩合集3","name":"🅱️┃哔哩┃合集3","type":3,"api":"./lib/drpy2.min.js","searchable":1,"quickSearch":0,"changeable":0,"filterable":0,"ext":"./js/bili_heji3.js"},
 {"key":"哔哩合集2","name":"🅱️┃哔哩┃合集2","type":3,"api":"./lib/drpy2.min.js","searchable":1,"quickSearch":0,"changeable":0,"filterable":0,"ext":"./js/bili_heji2.js"},
 {"key":"哔哩视频","name":"🅱️┃哔哩┃视频","type":3,"api":"./lib/drpy2.min.js","searchable":1,"quickSearch":0,"changeable":0,"filterable":0,"ext":"./js/bili_shipin.js"},
