@@ -127,22 +127,9 @@ class Spider(Spider):
             classes = [
                 {'type_name': '电影', 'type_id': '1'},
                 {'type_name': '剧集', 'type_id': '2'},
-                {'type_name': '国剧', 'type_id': '13'},
-                {'type_name': '动作片', 'type_id': '6'},
-                {'type_name': '喜剧片', 'type_id': '7'},
-                {'type_name': '爱情片', 'type_id': '8'},
-                {'type_name': '科幻片', 'type_id': '9'},
-                {'type_name': '恐怖片', 'type_id': '10'},
-                {'type_name': '剧情片', 'type_id': '11'},
-                {'type_name': '战争片', 'type_id': '12'},
-                {'type_name': '动画片', 'type_id': '23'},
-                {'type_name': '纪录片', 'type_id': '21'},
-                {'type_name': '港台剧', 'type_id': '14'},
-                {'type_name': '日韩剧', 'type_id': '15'},
-                {'type_name': '欧美剧', 'type_id': '16'},
-                {'type_name': '泰国剧', 'type_id': '24'},
-                {'type_name': '综艺', 'type_id': '3'},
                 {'type_name': '番剧', 'type_id': '4'},
+                {'type_name': '日韩', 'type_id': '15'},
+                {'type_name': '欧美', 'type_id': '16'},
             ]
             result['class'] = classes
             
@@ -378,7 +365,7 @@ class Spider(Spider):
 
     def categoryContent(self, tid, pg, filter, extend):
         try:
-            url = f"{self.host}/show/{tid}--------{pg}---.html"
+            url = f"{self.host}/type/{tid}-{pg}.html"
             resp = self._safe_get(url)
             if not resp or resp.status_code != 200:
                 return {'list': [], 'page': int(pg), 'pagecount': 1, 'limit': 0, 'total': 0}
