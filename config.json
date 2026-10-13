@@ -202,14 +202,7 @@
 {"key":"MTV1","name":"🎙️易听音乐┃带歌词","type":3,"api":"csp_MusicGuard","searchable":0,"quickSearch":0,"changeable":0,"playerType":2,"jar":"./jar/fan.txt"},
 
 
-{"key":"阿里云盘","name":"阿里•云盘","type":3,"api":"csp_PanAli","searchable":0,"changeable":0,"filterable":0},
-{"key":"夸克网盘","name":"夸克•网盘","type":3,"api":"csp_PanQuark","searchable":0,"changeable":0,"filterable":0},
-{"key":"UC网盘","name":"UC•网盘","type":3,"api":"csp_PanUC","searchable":0,"changeable":0,"filterable":0},
-{"key":"百度网盘","name":"百度•网盘","type":3,"api":"csp_PanBaidu","searchable":0,"changeable":0,"filterable":0},
-{"key":"迅雷云盘","name":"迅雷•云盘","type":3,"api":"csp_PanXunlei","searchable":0,"changeable":0,"filterable":0},
-{"key":"光鸭云盘","name":"光鸭•云盘","type":3,"api":"csp_PanGuangya","searchable":0,"changeable":0,"filterable":0},
-{"key":"天翼云盘","name":"天翼•云盘","type":3,"api":"csp_PanTianyi","searchable":0,"changeable":0,"filterable":0},
-{"key":"123云盘","name":"123•云盘","type":3,"api":"csp_Pan123","searchable":0,"changeable":0,"filterable":0},
+
 
 {"key":"seed","name":"💡聚剧┃四盘","type":3,"api":"csp_SeedhubGuard","searchable":1,"quickSearch":1,"changeable":0,"indexs":0,"ext":"5++kwLhNYm9UrO9wh7Dl7eKamTee4s/5","jar":"./jar/fan.txt"},
 {"key":"抠搜","name":"🍄抠抠┃搜搜","type":3,"api":"csp_KkSsGuard","searchable":1,"quickSearch":1,"changeable":0,"ext":{"Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto"},"jar":"./jar/fan.txt"},
@@ -218,12 +211,19 @@
 {"key":"ZPan","name":"🎈盘搜┃四盘","type":3,"api":"csp_S_zpsGuard","searchable":1,"quickSearch":0,"changeable":0,"indexs":0,"ext":{"siteUrl":"http://107.173.211.148/"},"jar":"./jar/fan.txt"},
 {"key":"JPan","name":"🦋易搜┃四盘","type":3,"api":"csp_S_zpsGuard","searchable":1,"quickSearch":0,"changeable":0,"indexs":0,"ext":{"siteUrl":"https://so.252035.xyz/"},"jar":"./jar/fan.txt"},
 {"key":"BpanSo","name":"🐞盘他┃嘟嘟","type":3,"api":"csp_BpanSoGuard","searchable":1,"quickSearch":1,"changeable":0,"ext":{"Cloud-drive":"tvfan/Cloud-drive.txt"},"jar":"./jar/fan.txt"},
-{"key":"MDrive","name":"🗂我的云盘┃我配置","type":3,"api":"csp_MyDriveGuard","searchable":1,"changeable":0,"indexs":0,"ext":{"Cloud-drive":"tvfan/Cloud-drive.txt"},"jar":"./jar/fan.txt"},
+{"key":"MDrive","name":"🗂我的┃配置","type":3,"api":"csp_MyDriveGuard","searchable":1,"changeable":0,"indexs":0,"ext":{"Cloud-drive":"tvfan/Cloud-drive.txt"},"jar":"./jar/fan.txt"},
 
-{"key":"AList","name":"网盘","type":3,"api":"csp_AList","searchable":1,"changeable":0,"ext":"./json/alist.json"},
-{"key":"WebDAV","name":"云盘","type":3,"api":"csp_WebDAV","searchable":1,"changeable":0,"ext":"./json/webdav.json"},
-  
+
+{"key":"阿里云盘","name":"阿里•云盘","type":3,"api":"csp_PanAli","searchable":0,"changeable":0,"filterable":0},
+{"key":"夸克网盘","name":"夸克•网盘","type":3,"api":"csp_PanQuark","searchable":0,"changeable":0,"filterable":0},
+{"key":"UC网盘","name":"UC•网盘","type":3,"api":"csp_PanUC","searchable":0,"changeable":0,"filterable":0},
+{"key":"百度网盘","name":"百度•网盘","type":3,"api":"csp_PanBaidu","searchable":0,"changeable":0,"filterable":0},
+{"key":"迅雷云盘","name":"迅雷•云盘","type":3,"api":"csp_PanXunlei","searchable":0,"changeable":0,"filterable":0},
+{"key":"光鸭云盘","name":"光鸭•云盘","type":3,"api":"csp_PanGuangya","searchable":0,"changeable":0,"filterable":0},
+{"key":"天翼云盘","name":"天翼•云盘","type":3,"api":"csp_PanTianyi","searchable":0,"changeable":0,"filterable":0},
+{"key":"123云盘","name":"123•云盘","type":3,"api":"csp_Pan123","searchable":0,"changeable":0,"filterable":0},
 {"key":"配置中心","name":"配置•中心","type":3,"api":"csp_Config","searchable":0,"changeable":0,"indexs":0},
+  
 {"key":"應用商店","name":"應用商店","type":3,"api":"csp_Market","searchable":0,"changeable":0,"ext":"./json/market.json"},
 {"key":"养生堂","name":"养生•知识","type":3,"api":"csp_YST","searchable":0,"quickSearch":0,"changeable":0},
 {"key":"急救教学","name":"急救•教学","type":3,"api":"csp_FirstAid","searchable":0,"quickSearch":0,"changeable":0,"gridview":"0-0-4.1"},
