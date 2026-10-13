@@ -202,17 +202,6 @@
 {"key":"MTV1","name":"🎙️易听音乐┃带歌词","type":3,"api":"csp_MusicGuard","searchable":0,"quickSearch":0,"changeable":0,"playerType":2,"jar":"./jar/fan.txt"},
 
 
-{"key":"PushShare","name":"资源分享","type":3,"api":"csp_PushShare","searchable":1,"quickSearch":1,"changeable":1,"filterable":0,"timeout":60,"ext":"./lib/token.json$$$./json/pushshare.txt$$$db$$$1"},
-{"key":"PikPakShare","name":"PikPak分享","type":3,"api":"csp_PikPakShare","searchable":1,"quickSearch":1,"changeable":1,"filterable":0,"timeout":60,"ext":"./lib/token.json$$$./json/pikpakclass.json$$$./json/pikpakclass.json.db.gz"},
-{"key":"AliShare","name":"影视分享","type":3,"api":"csp_AliShare","searchable":1,"quickSearch":1,"changeable":1,"filterable":0,"timeout":60,"ext":"./lib/token.json$$$./json/alishare.txt$$$db$$$1"},
-{"key":"AliShareEBook","name":"书籍分享","type":3,"api":"csp_AliShare","searchable":1,"quickSearch":0,"changeable":0,"filterable":0,"timeout":60,"ext":"./lib/token.json$$$./json/alishare.ebook.txt$$$db$$$1"},
-{"key":"ThunderShare","name":"迅雷分享","type":3,"api":"csp_ThunderShare","searchable":1,"quickSearch":1,"changeable":1,"filterable":0,"timeout":60,"ext":"./lib/token.json$$$./json/thundershare.txt"},
-{"key":"QuarkShare","name":"夸克分享","type":3,"api":"csp_QuarkShare","searchable":1,"quickSearch":1,"changeable":1,"filterable":0,"timeout":60,"ext":"./lib/token.json$$$./json/quarkshare.txt"},
-{"key":"115Share","name":"115云盘分享","type":3,"api":"csp_P115Share","searchable":1,"quickSearch":0,"changeable":0,"filterable":0,"timeout":60,"ext":"./lib/token.json$$$./json/115share.txt$$$db$$$1"},
-{"key":"UCShare","name":"UC云盘分享","type":3,"api":"csp_UCShare","searchable":1,"quickSearch":0,"changeable":0,"filterable":0,"timeout":60,"ext":"./lib/token.json$$$./json/ucshare.txt$$$db$$$1"},
-{"key":"SambaShare","name":"Samba分享","type":3,"api":"csp_SambaShare","searchable":0,"quickSearch":0,"changeable":0,"filterable":0,"timeout":60,"ext":"./lib/token.json$$$./json/sambashare.txt"},
-
-
 {"key":"阿里云盘","name":"阿里•云盘","type":3,"api":"csp_PanAli","searchable":0,"changeable":0,"filterable":0},
 {"key":"夸克网盘","name":"夸克•网盘","type":3,"api":"csp_PanQuark","searchable":0,"changeable":0,"filterable":0},
 {"key":"UC网盘","name":"UC•网盘","type":3,"api":"csp_PanUC","searchable":0,"changeable":0,"filterable":0},
@@ -226,18 +215,15 @@
 {"key":"抠搜","name":"🍄抠抠┃搜搜","type":3,"api":"csp_KkSsGuard","searchable":1,"quickSearch":1,"changeable":0,"ext":{"Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto"},"jar":"./jar/fan.txt"},
 {"key":"UC","name":"🌈优汐┃搜搜","type":3,"api":"csp_UuSsGuard","searchable":1,"quickSearch":1,"changeable":0,"ext":{"Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto"},"jar":"./jar/fan.txt"},
 {"key":"YpanSo","name":"🐟盘她┃三盘","type":3,"api":"csp_YpanSoGuard","searchable":1,"quickSearch":1,"changeable":0,"ext":{"Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto"},"jar":"./jar/fan.txt"},
-{"key":"xzso","name":"👻盘它┃三盘","type":3,"api":"csp_XzsoGuard","searchable":1,"quickSearch":1,"changeable":0,"ext":{"Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto"},"jar":"./jar/fan.txt"},
-{"key":"夸搜","name":"😻夸搜┃夸父","type":3,"api":"csp_PanSearchGuard","searchable":1,"quickSearch":1,"changeable":0,"ext":{"pan":"quark","Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto"},"jar":"./jar/fan.txt"},
-{"key":"Aliso","name":"🙀盘搜┃阿狸","type":3,"api":"csp_PanSearchGuard","searchable":1,"quickSearch":1,"changeable":0,"ext":{"Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto"},"jar":"./jar/fan.txt"},
-{"key":"YiSo","name":"😹易搜┃阿狸","type":3,"api":"csp_YiSoGuard","searchable":1,"quickSearch":1,"changeable":0,"ext":{"Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto"},"jar":"./jar/fan.txt"},
 {"key":"ZPan","name":"🎈盘搜┃四盘","type":3,"api":"csp_S_zpsGuard","searchable":1,"quickSearch":0,"changeable":0,"indexs":0,"ext":{"siteUrl":"http://107.173.211.148/"},"jar":"./jar/fan.txt"},
 {"key":"JPan","name":"🦋易搜┃四盘","type":3,"api":"csp_S_zpsGuard","searchable":1,"quickSearch":0,"changeable":0,"indexs":0,"ext":{"siteUrl":"https://so.252035.xyz/"},"jar":"./jar/fan.txt"},
 {"key":"BpanSo","name":"🐞盘他┃嘟嘟","type":3,"api":"csp_BpanSoGuard","searchable":1,"quickSearch":1,"changeable":0,"ext":{"Cloud-drive":"tvfan/Cloud-drive.txt"},"jar":"./jar/fan.txt"},
 {"key":"MDrive","name":"🗂我的云盘┃我配置","type":3,"api":"csp_MyDriveGuard","searchable":1,"changeable":0,"indexs":0,"ext":{"Cloud-drive":"tvfan/Cloud-drive.txt"},"jar":"./jar/fan.txt"},
-{"key":"配置中心","name":"配置•中心","type":3,"api":"csp_Config","searchable":0,"changeable":0,"indexs":0},
-{"key":"push_quark","name":"夸克推送","type":3,"api":"csp_Quark","changeable":0,"timeout":30,"ext":"http://127.0.0.1:9978/file/TV/quark.txt"},
+
 {"key":"AList","name":"网盘","type":3,"api":"csp_AList","searchable":1,"changeable":0,"ext":"./json/alist.json"},
 {"key":"WebDAV","name":"云盘","type":3,"api":"csp_WebDAV","searchable":1,"changeable":0,"ext":"./json/webdav.json"},
+  
+{"key":"配置中心","name":"配置•中心","type":3,"api":"csp_Config","searchable":0,"changeable":0,"indexs":0},
 {"key":"應用商店","name":"應用商店","type":3,"api":"csp_Market","searchable":0,"changeable":0,"ext":"./json/market.json"},
 {"key":"养生堂","name":"养生•知识","type":3,"api":"csp_YST","searchable":0,"quickSearch":0,"changeable":0},
 {"key":"急救教学","name":"急救•教学","type":3,"api":"csp_FirstAid","searchable":0,"quickSearch":0,"changeable":0,"gridview":"0-0-4.1"},
