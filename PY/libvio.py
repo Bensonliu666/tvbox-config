@@ -84,8 +84,11 @@ class Spider(Spider):
     def _parse_videos(self, html):
         videos = []
         seen = set()
+        # 实际HTML: href=" https://libvio.host/detail/123.html " title="名字" data-original="封面"
         pattern = re.compile(
-            r'href="/detail/(\d+)\.html"[^>]+title="([^"]*)"[^>]+data-original="([^"]*)"[^>]*>.*?'
+            r'href="\s*https?://[^"]*?/detail/(\d+)\.html\s*"\s+'
+            r'title="([^"]*)"[^>]*?'
+            r'data-original="([^"]*)"[^>]*>.*?'
             r'<span class="pic-text[^"]*">([^<]*)</span>.*?'
             r'<span class="pic-tag[^"]*">([^<]*)</span>',
             re.DOTALL
@@ -96,7 +99,7 @@ class Spider(Spider):
                 continue
             seen.add(vid)
             vod_name = m.group(2)
-            vod_pic = m.group(3)
+            vod_pic = m.group(3).strip()
             vod_remarks = m.group(4).strip()
             score = m.group(5).strip()
             if score and score != '0.0':
@@ -381,11 +384,11 @@ class Spider(Spider):
                 return {'list': [], 'page': int(pg), 'pagecount': 1, 'limit': 0, 'total': 0}
             html = resp.text
             videos = self._parse_videos(html)
-            pagecount_match = re.search(r'(\d+)/(\d+)', html)
-            pagecount = int(pagecount_match.group(2)) if pagecount_match else 999
-            last_page_match = re.search(r'class="page-link"[^>]*href="[^"]*-(\d+)---\.html"[^>]*>尾页', html)
-            if last_page_match:
-                pagecount = int(last_page_match.group(1))
+            # 分页: <li class="active num"><a>1/264</a></li>
+            pagecount = 1
+            pm = re.search(r'active num"><a>(\d+)/(\d+)</a>', html)
+            if pm:
+                pagecount = int(pm.group(2))
             return {
                 'list': videos,
                 'page': int(pg),
