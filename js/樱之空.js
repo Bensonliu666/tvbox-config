@@ -10,7 +10,7 @@ var rule = {
     searchable: 2,
     quickSearch: 0,
     filterable: 0,
-    class_name: '动漫$1',
+    class_name: '动漫',
     class_url: '1',
     headers: {
         'User-Agent': 'Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36',
